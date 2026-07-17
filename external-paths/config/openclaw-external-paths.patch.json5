@@ -1,0 +1,12 @@
+{
+  plugins: {
+    entries: {
+      mxc: {
+        config: {
+          network: "none",
+          mxcPolicyPaths: ["C:\\mxc-lab\\config\\mxc-external-paths-policy.json"]
+        }
+      }
+    }
+  }
+}

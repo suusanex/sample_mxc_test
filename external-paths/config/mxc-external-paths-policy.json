@@ -1,0 +1,14 @@
+{
+  "filesystem": {
+    "restrictToProjectDir": true,
+    "additionalReadonlyPaths": [
+      "C:\\mxc-lab\\input"
+    ],
+    "additionalReadwritePaths": [
+      "C:\\mxc-lab\\output"
+    ]
+  },
+  "process": {
+    "timeoutSeconds": 120
+  }
+}
