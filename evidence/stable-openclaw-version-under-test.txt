@@ -1,0 +1,5 @@
+Stable OpenClaw candidate: 2026.7.1
+Installation status: NOT INSTALLED
+Experiment status: NOT RUN
+Reason: @openclaw/mxc-sandbox@2026.7.2-beta.1 declares openclaw.compat.pluginApi >=2026.7.2-beta.1 and peerDependencies.openclaw >=2026.7.2-beta.1.
+Classification: stable core: incompatible by declared plugin/host contract

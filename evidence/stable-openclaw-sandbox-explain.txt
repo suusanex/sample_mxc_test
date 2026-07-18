@@ -1,0 +1,13 @@
+Stable-core sandbox explain was not executed because the stable core was not installed.
+
+Reason: the available functional MXC plugin requires pluginApi and openclaw peer dependency >=2026.7.2-beta.1, while the stable core candidate is 2026.7.1. Compatibility bypass was prohibited.
+
+The unchanged beta configuration was verified after the decision:
+- backend: mxc
+- mode: all
+- scope: agent
+- workspaceAccess: none
+- exec host: sandbox
+- elevated: disabled
+
+The complete unchanged-state output is in stable-openclaw-restore-result.txt.

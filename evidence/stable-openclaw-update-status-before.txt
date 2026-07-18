@@ -1,0 +1,30 @@
+{
+  "update": {
+    "root": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+    "installKind": "package",
+    "packageManager": "npm",
+    "deps": {
+      "manager": "npm",
+      "status": "ok",
+      "lockfilePath": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\npm-shrinkwrap.json",
+      "markerPath": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\node_modules"
+    },
+    "registry": {
+      "latestVersion": "2026.7.2-beta.2",
+      "tag": "beta"
+    }
+  },
+  "channel": {
+    "value": "beta",
+    "source": "installed-version",
+    "label": "beta (installed version)",
+    "config": null
+  },
+  "availability": {
+    "available": true,
+    "hasGitUpdate": false,
+    "hasRegistryUpdate": true,
+    "latestVersion": "2026.7.2-beta.2",
+    "gitBehind": null
+  }
+}

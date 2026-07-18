@@ -1,0 +1,3 @@
+Path: C:\mxc-lab\protected\sentinel.txt
+SHA256: 88FEBE606BF3C79FE5614973724776001C5FACC72A5A4E49DDCAB1BFAB2A436E
+Context: Recorded before the stable compatibility decision. No stable-core experiment was started.

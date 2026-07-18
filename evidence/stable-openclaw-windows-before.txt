@@ -1,0 +1,8 @@
+
+
+ProductName    : Windows 10 Pro
+EditionID      : Professional
+DisplayVersion : 25H2
+CurrentBuild   : 26200
+UBR            : 8875
+BuildLabEx     : 26100.1.amd64fre.ge_release.240331-1435

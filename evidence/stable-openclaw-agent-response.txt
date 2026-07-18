@@ -1,0 +1,5 @@
+No stable-core agent session was created and no agent response exists.
+
+The stable experiment was intentionally not started because openclaw@2026.7.1 does not satisfy the declared pluginApi and peer dependency requirements of the functional MXC plugin baseline.
+
+Classification: stable core: incompatible by declared plugin/host contract

@@ -1,0 +1,40 @@
+{
+  "version": "2026.7.2-beta.1",
+  "openclaw": {
+    "build": {
+      "bundledDist": false,
+      "staticAssets": [
+        {
+          "output": "mxc-spawn-launcher.mjs",
+          "source": "./src/mxc-spawn-launcher.mjs"
+        }
+      ],
+      "openclawVersion": "2026.7.2-beta.1"
+    },
+    "compat": {
+      "pluginApi": ">=2026.7.2-beta.1"
+    },
+    "install": {
+      "npmSpec": "@openclaw/mxc-sandbox",
+      "defaultChoice": "npm",
+      "minHostVersion": ">=2026.6.11"
+    },
+    "release": {
+      "publishToNpm": true,
+      "publishToClawHub": true
+    },
+    "extensions": [
+      "./index.ts"
+    ],
+    "runtimeExtensions": [
+      "./dist/index.js"
+    ]
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.7.2-beta.1"
+  },
+  "dependencies": {
+    "zod": "4.4.3",
+    "@microsoft/mxc-sdk": "0.7.0"
+  }
+}

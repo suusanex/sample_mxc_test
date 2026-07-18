@@ -1,0 +1,10 @@
+Stable-runtime inspection was not executed because the stable core was not installed.
+
+Stable core candidate: openclaw@2026.7.1
+Stable plugin candidate: @openclaw/mxc-sandbox@0.0.0 (Reserved package name; unusable)
+Baseline plugin: @openclaw/mxc-sandbox@2026.7.2-beta.1
+Declared plugin API contract: >=2026.7.2-beta.1
+Declared peer dependency: openclaw >=2026.7.2-beta.1
+Result: stable core 2026.7.1 is incompatible by the declared plugin/host contract.
+
+No runtime output has been fabricated. The unchanged beta runtime verification is in stable-openclaw-restore-result.txt.

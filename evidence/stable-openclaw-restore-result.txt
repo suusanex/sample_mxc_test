@@ -1,0 +1,226 @@
+===== openclaw --version =====
+OpenClaw 2026.7.2-beta.1 (a911e58)
+===== openclaw config validate =====
+Config valid: ~\.openclaw\openclaw.json
+===== openclaw plugins inspect mxc --runtime --json =====
+{
+  "workspaceDir": "C:\\Users\\LocalAdmin\\.openclaw\\workspace",
+  "plugin": {
+    "id": "mxc",
+    "name": "MXC Sandbox Execution",
+    "description": "OS-level sandboxed tool execution via MXC: runs commands in a Windows ProcessContainer with configured MXC policy files.",
+    "version": "2026.7.2-beta.1",
+    "packageName": "@openclaw/mxc-sandbox",
+    "format": "openclaw",
+    "source": "C:\\Users\\LocalAdmin\\.openclaw\\npm\\projects\\openclaw-mxc-sandbox-6ae574a5e3\\node_modules\\@openclaw\\mxc-sandbox\\dist\\index.js",
+    "rootDir": "C:\\Users\\LocalAdmin\\.openclaw\\npm\\projects\\openclaw-mxc-sandbox-6ae574a5e3\\node_modules\\@openclaw\\mxc-sandbox",
+    "origin": "global",
+    "enabled": true,
+    "compat": [
+      "activation-config-path-hint"
+    ],
+    "explicitlyEnabled": true,
+    "activated": true,
+    "activationSource": "explicit",
+    "activationReason": "enabled in config",
+    "syntheticAuthRefs": [],
+    "status": "loaded",
+    "toolNames": [],
+    "hookNames": [],
+    "channelIds": [],
+    "cliBackendIds": [],
+    "providerIds": [],
+    "embeddingProviderIds": [],
+    "speechProviderIds": [],
+    "realtimeTranscriptionProviderIds": [],
+    "realtimeVoiceProviderIds": [],
+    "mediaUnderstandingProviderIds": [],
+    "transcriptSourceProviderIds": [],
+    "imageGenerationProviderIds": [],
+    "videoGenerationProviderIds": [],
+    "musicGenerationProviderIds": [],
+    "webFetchProviderIds": [],
+    "webSearchProviderIds": [],
+    "migrationProviderIds": [],
+    "contextEngineIds": [],
+    "memoryEmbeddingProviderIds": [],
+    "agentHarnessIds": [],
+    "cliCommands": [],
+    "services": [],
+    "gatewayDiscoveryServiceIds": [],
+    "commands": [],
+    "httpRoutes": 0,
+    "hookCount": 0,
+    "configSchema": true,
+    "configJsonSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mxcBinaryPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "containment": {
+          "type": "string",
+          "enum": [
+            "process",
+            "processcontainer"
+          ]
+        },
+        "network": {
+          "type": "string",
+          "enum": [
+            "none",
+            "default"
+          ]
+        },
+        "timeoutSeconds": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 2147000
+        },
+        "debug": {
+          "type": "boolean"
+        },
+        "mxcPolicyPaths": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "imported": true,
+    "dependencyStatus": {
+      "hasDependencies": false,
+      "installed": true,
+      "requiredInstalled": true,
+      "optionalInstalled": true,
+      "missing": [],
+      "missingOptional": [],
+      "dependencies": [],
+      "optionalDependencies": []
+    }
+  },
+  "shape": "non-capability",
+  "capabilityMode": "none",
+  "capabilityCount": 0,
+  "capabilities": [],
+  "typedHooks": [],
+  "customHooks": [],
+  "tools": [],
+  "commands": [],
+  "cliCommands": [],
+  "services": [],
+  "gatewayDiscoveryServices": [],
+  "gatewayMethods": [],
+  "mcpServers": [],
+  "lspServers": [],
+  "httpRouteCount": 0,
+  "bundleCapabilities": [],
+  "diagnostics": [],
+  "policy": {
+    "allowedModels": [],
+    "hasAllowedModelsConfig": false
+  },
+  "usesLegacyBeforeAgentStart": false,
+  "compatibility": [],
+  "install": {
+    "source": "npm",
+    "spec": "@openclaw/mxc-sandbox@2026.7.2-beta.1",
+    "installPath": "C:\\Users\\LocalAdmin\\.openclaw\\npm\\projects\\openclaw-mxc-sandbox-6ae574a5e3\\node_modules\\@openclaw\\mxc-sandbox",
+    "version": "2026.7.2-beta.1",
+    "resolvedName": "@openclaw/mxc-sandbox",
+    "resolvedVersion": "2026.7.2-beta.1",
+    "resolvedSpec": "@openclaw/mxc-sandbox@2026.7.2-beta.1",
+    "integrity": "sha512-z78jO6enn9eFhDdte1PH4esfk/Sf4pbqb3CPv3nKTL2Byzl6jtd0lfv+Io+TW+tbsle4/YH+VTzUxHAPotv6EQ==",
+    "shasum": "d5ca74737821e4ff47d2677855544a13800907a9",
+    "resolvedAt": "2026-07-16T22:20:55.893Z",
+    "installedAt": "2026-07-16T22:21:11.428Z"
+  }
+}
+===== openclaw gateway status =====
+Service: Scheduled Task (registered)
+File logs: C:\Users\LOCALA~1\AppData\Local\Temp\openclaw\openclaw-2026-07-18.log
+Command: C:\Program Files\nodejs\node.exe C:\Users\LocalAdmin\AppData\Roaming\npm\node_modules\openclaw\dist\index.js gateway --port 18789
+Service file: ~\.openclaw\gateway.cmd
+Service env: OPENCLAW_GATEWAY_PORT=18789
+
+Config (cli): ~\.openclaw\openclaw.json
+Config (service): ~\.openclaw\openclaw.json
+
+Gateway: bind=loopback (127.0.0.1), port=18789 (service args)
+Probe target: ws://127.0.0.1:18789
+Dashboard: http://127.0.0.1:18789/
+Probe note: Loopback-only gateway; only local clients can connect.
+
+CLI version: 2026.7.2-beta.1 (~\AppData\Roaming\npm\node_modules\openclaw\openclaw.mjs)
+Gateway version: 2026.7.2-beta.1
+
+Runtime: running (pid 140, state Ready, last run 0, last run time 7/18/2026 9:41:34 AM, Gateway process detected for gateway port 18789.)
+Connectivity probe: ok
+Capability: connected-no-operator-scope
+
+Listening: 127.0.0.1:18789
+Troubles: run openclaw status
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+===== openclaw sandbox explain --agent mxc-test --json =====
+{
+  "docsUrl": "https://docs.openclaw.ai/sandbox",
+  "agentId": "mxc-test",
+  "sessionKey": "agent:mxc-test:main",
+  "mainSessionKey": "agent:mxc-test:main",
+  "sandbox": {
+    "mode": "all",
+    "scope": "agent",
+    "backend": "mxc",
+    "workspaceAccess": "none",
+    "workspaceRoot": "C:\\mxc-lab\\sandboxes",
+    "effectiveHostWorkspaceRoot": "C:\\mxc-lab\\sandboxes\\agent-mxc-test-7e56d6fb",
+    "workspaceMounts": [],
+    "workspaceSource": "sandbox",
+    "sessionIsSandboxed": true,
+    "tools": {
+      "allow": [
+        "exec"
+      ],
+      "deny": [
+        "image"
+      ],
+      "sources": {
+        "allow": {
+          "source": "agent",
+          "key": "agents.list[].tools.sandbox.tools.allow"
+        },
+        "deny": {
+          "source": "agent",
+          "key": "agents.list[].tools.sandbox.tools.deny"
+        }
+      }
+    }
+  },
+  "elevated": {
+    "enabled": false,
+    "allowedByConfig": false,
+    "alwaysAllowedByConfig": false,
+    "allowFrom": {},
+    "failures": [
+      {
+        "gate": "enabled",
+        "key": "agents.list[].tools.elevated.enabled"
+      }
+    ]
+  },
+  "fixIt": [
+    "agents.defaults.sandbox.mode=off",
+    "agents.list[].sandbox.mode=off",
+    "tools.sandbox.tools.allow",
+    "tools.sandbox.tools.alsoAllow",
+    "tools.sandbox.tools.deny",
+    "agents.list[].tools.sandbox.tools.allow",
+    "agents.list[].tools.sandbox.tools.alsoAllow",
+    "agents.list[].tools.sandbox.tools.deny",
+    "tools.elevated.enabled"
+  ]
+}

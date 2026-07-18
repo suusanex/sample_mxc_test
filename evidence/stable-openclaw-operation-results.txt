@@ -1,0 +1,5 @@
+Stable-core operation results: NOT RUN
+
+No input read, output write, or protected-file deletion attempt was executed under the stable core. The experiment stopped at the package-contract compatibility gate, before any Gateway session or MXC ProcessContainer was created.
+
+This file must not be interpreted as an MXC policy success or failure result.
