@@ -1,0 +1,110 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "port": 19789,
+    "auth": {
+      "mode": "token"
+    },
+    "controlUi": {
+      "enabled": false
+    },
+    "terminal": {
+      "enabled": false
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "C:\\mxc-lab\\whole-gateway\\workspace",
+      "model": "openai/gpt-5.6-sol",
+      "skills": [],
+      "skipBootstrap": true,
+      "elevatedDefault": "off",
+      "sandbox": {
+        "mode": "off"
+      }
+    },
+    "list": [
+      {
+        "id": "whole-gateway",
+        "default": true,
+        "workspace": "C:\\mxc-lab\\whole-gateway\\workspace",
+        "model": "openai/gpt-5.6-sol",
+        "skills": [],
+        "sandbox": {
+          "mode": "off"
+        },
+        "tools": {
+          "profile": "full",
+          "allow": [
+            "exec",
+            "direct_fs_probe"
+          ],
+          "elevated": {
+            "enabled": false
+          }
+        }
+      }
+    ]
+  },
+  "tools": {
+    "profile": "full",
+    "allow": [
+      "exec",
+      "direct_fs_probe"
+    ],
+    "elevated": {
+      "enabled": false
+    },
+    "exec": {
+      "host": "gateway",
+      "mode": "full",
+      "timeoutSec": 120
+    }
+  },
+  "plugins": {
+    "enabled": true,
+    "allow": [
+      "direct-fs-probe",
+      "openai",
+      "codex"
+    ],
+    "bundledDiscovery": "allowlist",
+    "load": {
+      "paths": [
+        "C:\\mxc-lab\\whole-gateway\\plugin"
+      ]
+    },
+    "entries": {
+      "direct-fs-probe": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      },
+      "codex": {
+        "enabled": true,
+        "config": {
+          "codexDynamicToolsLoading": "direct",
+          "codexPlugins": {
+            "enabled": false
+          },
+          "appServer": {
+            "transport": "stdio",
+            "homeScope": "user",
+            "approvalPolicy": "never",
+            "sandbox": "danger-full-access",
+            "codeModeOnly": false,
+            "networkProxy": {
+              "enabled": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.7.1-1",
+    "lastTouchedAt": "2026-07-18T05:27:19.620Z"
+  }
+}

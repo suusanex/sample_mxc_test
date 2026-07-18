@@ -1,0 +1,11 @@
+CapturedAt=2026-07-18
+ExperimentPort19789Listener=false
+RunnerPid8708=false
+ExecutorPid11956=false
+BootstrapPid2892=false
+GatewayPid2228=false
+Termination=runner SIGINT; executor SIGTERM
+AppContainerPolicyClearOnExit=true
+Preserved=app, runner source, config/policy, plugin source/build, redacted evidence, output
+Committed=false state/auth/token/session DB/npm cache/private environment dumps
+SystemDriveAcl=official host-prep metadata ACEs match pre-experiment observed state; no manual service/DLL changes

@@ -1,0 +1,9 @@
+label=agent-direct-tool
+pid=4968
+status=1
+signal=none
+error=none
+--- stdout ---
+
+--- stderr ---
+GatewayClientRequestError: Error: codex app-server exited: code=1 signal=null stderr="WARNING: proceeding, even though we could not create PATH aliases: failed to canonicalize CODEX_HOME \"C:\\\\mxc-lab\\\\whole-gateway\\\\state\\\\.codex\": アクセスが拒否されました。 (os error 5...

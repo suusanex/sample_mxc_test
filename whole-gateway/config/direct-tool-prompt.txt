@@ -1,0 +1,1 @@
+Call the direct_fs_probe structured tool exactly once now. Do not call exec or any other tool. After the tool result, return the complete structured result without changing it.

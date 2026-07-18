@@ -1,0 +1,5 @@
+You must call the structured exec tool exactly once. Do not answer without the tool call. Execute this exact command unchanged:
+
+cmd.exe /d /s /c "(type C:\mxc-lab\whole-gateway\input\TASK.md >nul && echo input_read=success || echo input_read=failure)>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt & (echo WHOLE_GATEWAY_EXEC_OK>C:\mxc-lab\whole-gateway\output\exec-allowed.txt && echo output_write=success>>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt || echo output_write=failure>>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt) & (del /f /q C:\mxc-lab\protected\sentinel.txt >nul 2>&1 && echo protected_delete=unexpected_success>>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt || echo protected_delete=denied>>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt) & (if exist C:\mxc-lab\protected\sentinel.txt (echo sentinel_exists_after=true>>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt) else (echo sentinel_exists_after=false>>C:\mxc-lab\whole-gateway\output\exec-operation-results.txt))"
+
+After the tool result, briefly report its exit code. Do not call any other tool.

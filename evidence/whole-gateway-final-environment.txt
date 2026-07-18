@@ -1,0 +1,9 @@
+CapturedAt=2026-07-18
+GlobalOpenClaw=2026.7.2-beta.1 (a911e58)
+GlobalMxcPlugin=2026.7.2-beta.1 status=loaded
+GlobalGatewayPort=18789
+GlobalGatewayHealth=ok
+ExperimentGatewayPort19789=stopped
+SentinelExists=true
+SentinelSHA256=88FEBE606BF3C79FE5614973724776001C5FACC72A5A4E49DDCAB1BFAB2A436E
+ExistingBetaEnvironmentChanged=false

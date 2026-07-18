@@ -1,0 +1,10 @@
+CapturedAt=2026-07-18
+npm openclaw latest=2026.7.1-2
+npm @openclaw/codex latest=2026.7.1-1
+installed openclaw=2026.7.1-1
+installed @openclaw/codex=2026.7.1-1
+installed @openai/codex=0.144.3
+installed @microsoft/mxc-sdk=0.7.0
+entryPoint=C:\mxc-lab\whole-gateway\app\node_modules\openclaw\openclaw.mjs
+betaSuffix=false
+note=一致する公開済み安定版core/companionペアを使用。core latestより1 hotfix古い。

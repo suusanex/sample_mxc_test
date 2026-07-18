@@ -1,0 +1,26 @@
+
+
+ProcessId       : 8708
+ParentProcessId : 1888
+Name            : node.exe
+ExecutablePath  : C:\Program Files\nodejs\node.exe
+CommandLine     : "C:\Program Files\nodejs\node.exe" C:\mxc-lab\whole-gateway\runner\run-gateway.mjs --run-experiments
+
+ProcessId       : 11956
+ParentProcessId : 8708
+Name            : wxc-exec.exe
+ExecutablePath  : C:\mxc-lab\whole-gateway\app\node_modules\@microsoft\mxc-sdk\bin\x64\wxc-exec.exe
+CommandLine     : <redacted: contains base64 environment>
+
+ProcessId       : 2892
+ParentProcessId : 11956
+Name            : node.exe
+ExecutablePath  : C:\Program Files\nodejs\node.exe
+CommandLine     : "C:\Program Files\nodejs\node.exe" "C:\mxc-lab\whole-gateway\runner\gateway-bootstrap.mjs"
+
+ProcessId       : 2228
+ParentProcessId : 2892
+Name            : node.exe
+ExecutablePath  : C:\Program Files\nodejs\node.exe
+CommandLine     : "C:\Program Files\nodejs\node.exe" C:\mxc-lab\whole-gateway\app\node_modules\openclaw\openclaw.mjs
+                  gateway run --port 19789 --bind loopback --verbose

@@ -1,0 +1,42 @@
+label=tools-invoke-direct
+pid=12412
+status=0
+signal=none
+error=none
+--- stdout ---
+{
+  "ok": true,
+  "toolName": "direct_fs_probe",
+  "output": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"gatewayProcessPid\": 2228,\n  \"operations\": [\n    {\n      \"operation\": \"input_read\",\n      \"success\": true,\n      \"value\": \"WHOLE_GATEWAY_ALLOWED_INPUT\"\n    },\n    {\n      \"operation\": \"output_write\",\n      \"success\": true,\n      \"value\": \"C:\\\\mxc-lab\\\\whole-gateway\\\\output\\\\direct-tool-allowed.txt\"\n    },\n    {\n      \"operation\": \"protected_delete\",\n      \"success\": false,\n      \"errorCode\": \"EPERM\",\n      \"errorMessage\": \"EPERM: operation not permitted, unlink 'C:\\\\mxc-lab\\\\protected\\\\sentinel.txt'\"\n    }\n  ]\n}"
+      }
+    ],
+    "details": {
+      "gatewayProcessPid": 2228,
+      "operations": [
+        {
+          "operation": "input_read",
+          "success": true,
+          "value": "WHOLE_GATEWAY_ALLOWED_INPUT"
+        },
+        {
+          "operation": "output_write",
+          "success": true,
+          "value": "C:\\mxc-lab\\whole-gateway\\output\\direct-tool-allowed.txt"
+        },
+        {
+          "operation": "protected_delete",
+          "success": false,
+          "errorCode": "EPERM",
+          "errorMessage": "EPERM: operation not permitted, unlink 'C:\\mxc-lab\\protected\\sentinel.txt'"
+        }
+      ]
+    }
+  },
+  "source": "plugin"
+}
+
+--- stderr ---

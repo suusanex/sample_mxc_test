@@ -1,0 +1,15 @@
+CapturedAt=2026-07-18T13:28:30+09:00
+Windows ProductName=Windows 10 Pro
+EditionID=Professional
+DisplayVersion=25H2
+CurrentBuild=26200
+UBR=8875
+FullVersion=10.0.26200.8875
+Node=v24.18.0
+GlobalOpenClaw=2026.7.2-beta.1 (a911e58)
+GlobalMxcPlugin=2026.7.2-beta.1 status=loaded
+GlobalGateway=running connectivity=ok port=18789
+mxc-test=sandbox mode=all backend=mxc scope=agent workspaceAccess=none
+ExistingMxcSdk=0.7.0
+SentinelSHA256=88FEBE606BF3C79FE5614973724776001C5FACC72A5A4E49DDCAB1BFAB2A436E
+BaselineModified=false

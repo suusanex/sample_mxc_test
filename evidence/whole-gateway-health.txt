@@ -1,0 +1,121 @@
+label=gateway-health
+pid=4048
+status=0
+signal=none
+error=none
+--- stdout ---
+{
+  "ok": true,
+  "ts": 1784357483481,
+  "durationMs": 102,
+  "eventLoop": {
+    "degraded": true,
+    "reasons": [
+      "event_loop_delay"
+    ],
+    "intervalMs": 14147,
+    "delayP99Ms": 44.1,
+    "delayMaxMs": 1084.2,
+    "utilization": 0.114,
+    "cpuCoreRatio": 0.144
+  },
+  "plugins": {
+    "loaded": [
+      "codex",
+      "direct-fs-probe",
+      "memory-core",
+      "openai"
+    ],
+    "errors": []
+  },
+  "configReload": {
+    "hotReloadStatus": "active"
+  },
+  "modelPricing": {
+    "state": "ok",
+    "sources": []
+  },
+  "channels": {},
+  "channelOrder": [],
+  "channelLabels": {},
+  "heartbeatSeconds": 1800,
+  "defaultAgentId": "whole-gateway",
+  "agents": [
+    {
+      "agentId": "whole-gateway",
+      "isDefault": true,
+      "heartbeat": {
+        "enabled": true,
+        "every": "30m",
+        "everyMs": 1800000,
+        "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+        "target": "none",
+        "ackMaxChars": 300
+      },
+      "sessions": {
+        "path": "C:\\mxc-lab\\whole-gateway\\state\\agents\\whole-gateway\\sessions\\sessions.json",
+        "count": 8,
+        "recent": [
+          {
+            "key": "agent:whole-gateway:explicit:whole-gateway-direct-1784354926641",
+            "updatedAt": 1784354953028,
+            "age": 2530350
+          },
+          {
+            "key": "agent:whole-gateway:explicit:whole-gateway-exec-1784354913732",
+            "updatedAt": 1784354941461,
+            "age": 2541917
+          },
+          {
+            "key": "agent:whole-gateway:explicit:whole-gateway-direct-1784354616391",
+            "updatedAt": 1784354643588,
+            "age": 2839790
+          },
+          {
+            "key": "agent:whole-gateway:explicit:whole-gateway-exec-1784354603344",
+            "updatedAt": 1784354631231,
+            "age": 2852147
+          },
+          {
+            "key": "agent:whole-gateway:explicit:whole-gateway-direct-1784354363819",
+            "updatedAt": 1784354378193,
+            "age": 3105185
+          }
+        ]
+      }
+    }
+  ],
+  "sessions": {
+    "path": "C:\\mxc-lab\\whole-gateway\\state\\agents\\whole-gateway\\sessions\\sessions.json",
+    "count": 8,
+    "recent": [
+      {
+        "key": "agent:whole-gateway:explicit:whole-gateway-direct-1784354926641",
+        "updatedAt": 1784354953028,
+        "age": 2530350
+      },
+      {
+        "key": "agent:whole-gateway:explicit:whole-gateway-exec-1784354913732",
+        "updatedAt": 1784354941461,
+        "age": 2541917
+      },
+      {
+        "key": "agent:whole-gateway:explicit:whole-gateway-direct-1784354616391",
+        "updatedAt": 1784354643588,
+        "age": 2839790
+      },
+      {
+        "key": "agent:whole-gateway:explicit:whole-gateway-exec-1784354603344",
+        "updatedAt": 1784354631231,
+        "age": 2852147
+      },
+      {
+        "key": "agent:whole-gateway:explicit:whole-gateway-direct-1784354363819",
+        "updatedAt": 1784354378193,
+        "age": 3105185
+      }
+    ]
+  }
+}
+
+--- stderr ---

@@ -1,0 +1,42 @@
+{
+  "version": "0.7.0-alpha",
+  "filesystem": {
+    "readonlyPaths": [
+      "C:\\mxc-lab\\whole-gateway",
+      "C:\\Program Files\\nodejs",
+      "C:\\Windows\\System32",
+      "C:\\Windows\\SysWOW64",
+      "C:\\mxc-lab\\whole-gateway\\app",
+      "C:\\mxc-lab\\whole-gateway\\config",
+      "C:\\mxc-lab\\whole-gateway\\input",
+      "C:\\mxc-lab\\whole-gateway\\plugin"
+    ],
+    "readwritePaths": [
+      "C:\\mxc-lab\\whole-gateway\\state",
+      "C:\\mxc-lab\\whole-gateway\\workspace",
+      "C:\\mxc-lab\\whole-gateway\\workspace\\codex-home",
+      "C:\\mxc-lab\\whole-gateway\\output",
+      "C:\\mxc-lab\\whole-gateway\\temp",
+      "C:\\mxc-lab\\whole-gateway\\logs"
+    ],
+    "clearPolicyOnExit": true
+  },
+  "network": {
+    "allowOutbound": true,
+    "allowLocalNetwork": true
+  },
+  "ui": {
+    "allowWindows": true,
+    "clipboard": "none",
+    "allowInputInjection": false
+  },
+  "runtimeOverrides": {
+    "containment": "process",
+    "selectedIsolationTier": "appcontainer-dacl",
+    "leastPrivilege": false,
+    "usePty": false,
+    "timeout": 0,
+    "fallbackImplemented": false,
+    "secrets": "<redacted>"
+  }
+}

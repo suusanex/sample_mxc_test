@@ -1,0 +1,26 @@
+Host observation during stable Gateway run:
+
+LocalAddress=127.0.0.1
+LocalPort=19789
+ListenerObserved=true
+
+GET http://127.0.0.1:19789/healthz
+result=timeout
+
+GET http://127.0.0.1:19789/readyz
+result=timeout
+
+HostToProcessContainerLoopbackReachable=false
+
+Internal harness observation from the same MXC process tree:
+
+command=openclaw gateway probe --json
+status=0
+ok=true
+target=ws://127.0.0.1:19789
+connect.ok=true
+connect.rpcOk=true
+runtimeVersion=2026.7.1-1
+health.ok=true
+
+Classification=Gateway startup and internal readiness succeeded; host loopback reachability failed.

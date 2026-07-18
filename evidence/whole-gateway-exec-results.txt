@@ -1,0 +1,11 @@
+classification=not_started
+agentSession=failed
+modelConnection=not_started
+structuredToolCall=not_observed
+childProcess=not_started
+inputRead=not_tested_by_exec
+outputWrite=not_tested_by_exec
+protectedDelete=not_tested_by_exec
+fallback=false
+errorLayer=Codex app-server startup / CODEX_HOME canonicalize
+error=Access is denied (os error 5)
