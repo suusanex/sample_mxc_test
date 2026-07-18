@@ -1,0 +1,39 @@
+{
+  agents: {
+    list: [
+      {
+        id: "main",
+        workspace: "C:\\Users\\LocalAdmin\\.openclaw\\workspace"
+      },
+      {
+        id: "mxc-test",
+        workspace: "C:\\mxc-lab\\agent-home",
+        skills: [],
+        sandbox: {
+          mode: "all",
+          backend: "mxc",
+          workspaceRoot: "C:\\mxc-lab\\sandboxes",
+          workspaceAccess: "none",
+          scope: "agent"
+        },
+        tools: {
+          profile: "full",
+          allow: ["exec"],
+          deny: ["image"],
+          exec: {
+            host: "sandbox"
+          },
+          elevated: {
+            enabled: false
+          },
+          sandbox: {
+            tools: {
+              allow: ["exec"],
+              deny: ["image"]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

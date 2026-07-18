@@ -1,0 +1,19 @@
+﻿Command: openclaw sandbox recreate --agent mxc-test --force
+ExitCode: 0
+
+
+Sandbox runtimes to be recreated:
+
+📦 Sandbox Runtimes:
+  - openclaw-mxc-agent-mxc-test-7e56d6fb [mxc] (stopped)
+
+Total: 1 runtime(s)
+
+Removing sandbox runtimes...
+
+✓ Removed openclaw-mxc-agent-mxc-test-7e56d6fb
+
+Done: 1 removed, 0 failed
+
+Runtimes will be automatically recreated when the agent is next used.
+

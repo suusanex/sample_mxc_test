@@ -1,0 +1,93 @@
+﻿Command: openclaw sandbox explain --agent mxc-test --json
+ExitCode: 0
+
+{
+  "docsUrl": "https://docs.openclaw.ai/sandbox",
+  "agentId": "mxc-test",
+  "sessionKey": "agent:mxc-test:main",
+  "mainSessionKey": "agent:mxc-test:main",
+  "sandbox": {
+    "mode": "all",
+    "scope": "agent",
+    "backend": "mxc",
+    "workspaceAccess": "none",
+    "workspaceRoot": "C:\\Users\\LocalAdmin\\.openclaw\\sandboxes",
+    "effectiveHostWorkspaceRoot": "C:\\Users\\LocalAdmin\\.openclaw\\sandboxes\\agent-mxc-test-7e56d6fb",
+    "workspaceMounts": [],
+    "workspaceSource": "sandbox",
+    "sessionIsSandboxed": true,
+    "tools": {
+      "allow": [
+        "exec",
+        "image"
+      ],
+      "deny": [
+        "browser",
+        "canvas",
+        "computer",
+        "nodes",
+        "cron",
+        "gateway",
+        "feishu",
+        "googlechat",
+        "nostr",
+        "msteams",
+        "mattermost",
+        "nextcloud-talk",
+        "matrix",
+        "raft",
+        "line",
+        "zalo",
+        "clickclack",
+        "zalouser",
+        "sms",
+        "synology-chat",
+        "tlon",
+        "discord",
+        "imessage",
+        "irc",
+        "qqbot",
+        "reef",
+        "signal",
+        "slack",
+        "telegram",
+        "twitch",
+        "whatsapp"
+      ],
+      "sources": {
+        "allow": {
+          "source": "agent",
+          "key": "agents.list[].tools.sandbox.tools.allow"
+        },
+        "deny": {
+          "source": "default",
+          "key": "tools.sandbox.tools.deny"
+        }
+      }
+    }
+  },
+  "elevated": {
+    "enabled": false,
+    "allowedByConfig": false,
+    "alwaysAllowedByConfig": false,
+    "allowFrom": {},
+    "failures": [
+      {
+        "gate": "enabled",
+        "key": "agents.list[].tools.elevated.enabled"
+      }
+    ]
+  },
+  "fixIt": [
+    "agents.defaults.sandbox.mode=off",
+    "agents.list[].sandbox.mode=off",
+    "tools.sandbox.tools.allow",
+    "tools.sandbox.tools.alsoAllow",
+    "tools.sandbox.tools.deny",
+    "agents.list[].tools.sandbox.tools.allow",
+    "agents.list[].tools.sandbox.tools.alsoAllow",
+    "agents.list[].tools.sandbox.tools.deny",
+    "tools.elevated.enabled"
+  ]
+}
+

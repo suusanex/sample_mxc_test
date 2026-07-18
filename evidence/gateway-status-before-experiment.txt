@@ -1,0 +1,512 @@
+﻿Command: openclaw status --json
+ExitCode: 0
+
+{
+  "runtimeVersion": "2026.7.2-beta.1",
+  "heartbeat": {
+    "defaultAgentId": "main",
+    "agents": [
+      {
+        "agentId": "main",
+        "enabled": true,
+        "every": "30m",
+        "everyMs": 1800000
+      },
+      {
+        "agentId": "mxc-test",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      }
+    ]
+  },
+  "channelSummary": [],
+  "queuedSystemEvents": [],
+  "tasks": {
+    "total": 0,
+    "active": 0,
+    "terminal": 0,
+    "failures": 0,
+    "byStatus": {
+      "queued": 0,
+      "running": 0,
+      "succeeded": 0,
+      "failed": 0,
+      "timed_out": 0,
+      "cancelled": 0,
+      "lost": 0
+    },
+    "byRuntime": {
+      "subagent": 0,
+      "acp": 0,
+      "cli": 0,
+      "cron": 0
+    }
+  },
+  "taskAudit": {
+    "total": 0,
+    "warnings": 0,
+    "errors": 0,
+    "byCode": {
+      "stale_queued": 0,
+      "stale_running": 0,
+      "lost": 0,
+      "delivery_failed": 0,
+      "missing_cleanup": 0,
+      "inconsistent_timestamps": 0
+    }
+  },
+  "sessions": {
+    "paths": [
+      "C:\\Users\\LocalAdmin\\.openclaw\\agents\\main\\sessions\\sessions.json",
+      "C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\sessions\\sessions.json"
+    ],
+    "count": 6,
+    "defaults": {
+      "model": "gpt-5.6-sol",
+      "contextTokens": 1050000
+    },
+    "recent": [
+      {
+        "agentId": "mxc-test",
+        "key": "agent:mxc-test:external-paths-final",
+        "kind": "direct",
+        "sessionId": "8c0a9753-e0dd-422e-9287-681e8faf85bc",
+        "updatedAt": 1784281705276,
+        "age": 23791215,
+        "thinkingLevel": "high",
+        "abortedLastRun": false,
+        "inputTokens": 8268,
+        "outputTokens": 412,
+        "cacheRead": 6656,
+        "cacheWrite": 0,
+        "totalTokens": 8074,
+        "totalTokensFresh": true,
+        "remainingTokens": 363926,
+        "percentUsed": 2,
+        "model": "gpt-5.6-sol",
+        "configuredModel": "openai/gpt-5.6-sol",
+        "selectedModel": "openai/gpt-5.6-sol",
+        "modelSelectionReason": null,
+        "runtime": "OpenClaw Default",
+        "contextTokens": 372000,
+        "flags": [
+          "think:high",
+          "id:8c0a9753-e0dd-422e-9287-681e8faf85bc"
+        ]
+      },
+      {
+        "agentId": "mxc-test",
+        "key": "agent:mxc-test:external-paths-20260717-retry2",
+        "kind": "direct",
+        "sessionId": "a582da70-aff2-4e39-9a5d-a2d6463239fc",
+        "updatedAt": 1784281565571,
+        "age": 23930920,
+        "abortedLastRun": false,
+        "inputTokens": 14922,
+        "outputTokens": 1198,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 8063,
+        "totalTokensFresh": true,
+        "remainingTokens": 363937,
+        "percentUsed": 2,
+        "model": "gpt-5.6-sol",
+        "configuredModel": "openai/gpt-5.6-sol",
+        "selectedModel": "openai/gpt-5.6-sol",
+        "modelSelectionReason": null,
+        "runtime": "OpenClaw Default",
+        "contextTokens": 372000,
+        "flags": [
+          "id:a582da70-aff2-4e39-9a5d-a2d6463239fc"
+        ]
+      },
+      {
+        "agentId": "mxc-test",
+        "key": "agent:mxc-test:external-paths-20260717-retry1",
+        "kind": "direct",
+        "sessionId": "87fb4638-0a40-4ef2-a7c9-21c4dc460aa2",
+        "updatedAt": 1784281453918,
+        "age": 24042573,
+        "abortedLastRun": false,
+        "inputTokens": 6795,
+        "outputTokens": 106,
+        "cacheRead": 8192,
+        "cacheWrite": 0,
+        "totalTokens": 8101,
+        "totalTokensFresh": true,
+        "remainingTokens": 363899,
+        "percentUsed": 2,
+        "model": "gpt-5.6-sol",
+        "configuredModel": "openai/gpt-5.6-sol",
+        "selectedModel": "openai/gpt-5.6-sol",
+        "modelSelectionReason": null,
+        "runtime": "OpenClaw Default",
+        "contextTokens": 372000,
+        "flags": [
+          "id:87fb4638-0a40-4ef2-a7c9-21c4dc460aa2"
+        ]
+      },
+      {
+        "agentId": "mxc-test",
+        "key": "agent:mxc-test:external-paths-20260717",
+        "kind": "direct",
+        "sessionId": "1f254db6-2cc2-459f-a2d7-ae23e4775513",
+        "updatedAt": 1784281372327,
+        "age": 24124164,
+        "abortedLastRun": false,
+        "inputTokens": 8336,
+        "outputTokens": 163,
+        "cacheRead": 6656,
+        "cacheWrite": 0,
+        "totalTokens": 8108,
+        "totalTokensFresh": true,
+        "remainingTokens": 363892,
+        "percentUsed": 2,
+        "model": "gpt-5.6-sol",
+        "configuredModel": "openai/gpt-5.6-sol",
+        "selectedModel": "openai/gpt-5.6-sol",
+        "modelSelectionReason": null,
+        "runtime": "OpenClaw Default",
+        "contextTokens": 372000,
+        "flags": [
+          "id:1f254db6-2cc2-459f-a2d7-ae23e4775513"
+        ]
+      },
+      {
+        "agentId": "mxc-test",
+        "key": "agent:mxc-test:main",
+        "kind": "direct",
+        "sessionId": "d62f799c-9048-400e-98fb-2f71ddf539c5",
+        "updatedAt": 1784279153062,
+        "age": 26343429,
+        "abortedLastRun": false,
+        "inputTokens": 2595,
+        "outputTokens": 1311,
+        "cacheRead": 17408,
+        "cacheWrite": 0,
+        "totalTokens": 10602,
+        "totalTokensFresh": true,
+        "remainingTokens": 361398,
+        "percentUsed": 3,
+        "model": "gpt-5.6-sol",
+        "configuredModel": "openai/gpt-5.6-sol",
+        "selectedModel": "openai/gpt-5.6-sol",
+        "modelSelectionReason": null,
+        "runtime": "OpenClaw Default",
+        "contextTokens": 372000,
+        "flags": [
+          "id:d62f799c-9048-400e-98fb-2f71ddf539c5"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:main",
+        "kind": "direct",
+        "sessionId": "d35e12a8-2dcb-497f-92c8-42bd2e2cd466",
+        "updatedAt": 1784241264996,
+        "age": 64231495,
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 15278,
+        "outputTokens": 64,
+        "cacheRead": 14848,
+        "cacheWrite": 0,
+        "totalTokens": 15115,
+        "totalTokensFresh": true,
+        "remainingTokens": 1034885,
+        "percentUsed": 1,
+        "model": "gpt-5.6-sol",
+        "configuredModel": "openai/gpt-5.6-sol",
+        "selectedModel": "openai/gpt-5.6-sol",
+        "modelSelectionReason": null,
+        "runtime": "OpenAI Codex",
+        "contextTokens": 1050000,
+        "flags": [
+          "system",
+          "id:d35e12a8-2dcb-497f-92c8-42bd2e2cd466"
+        ]
+      }
+    ],
+    "byAgent": [
+      {
+        "agentId": "main",
+        "path": "C:\\Users\\LocalAdmin\\.openclaw\\agents\\main\\sessions\\sessions.json",
+        "count": 1,
+        "recent": [
+          {
+            "agentId": "main",
+            "key": "agent:main:main",
+            "kind": "direct",
+            "sessionId": "d35e12a8-2dcb-497f-92c8-42bd2e2cd466",
+            "updatedAt": 1784241264996,
+            "age": 64231495,
+            "systemSent": true,
+            "abortedLastRun": false,
+            "inputTokens": 15278,
+            "outputTokens": 64,
+            "cacheRead": 14848,
+            "cacheWrite": 0,
+            "totalTokens": 15115,
+            "totalTokensFresh": true,
+            "remainingTokens": 1034885,
+            "percentUsed": 1,
+            "model": "gpt-5.6-sol",
+            "configuredModel": "openai/gpt-5.6-sol",
+            "selectedModel": "openai/gpt-5.6-sol",
+            "modelSelectionReason": null,
+            "runtime": "OpenAI Codex",
+            "contextTokens": 1050000,
+            "flags": [
+              "system",
+              "id:d35e12a8-2dcb-497f-92c8-42bd2e2cd466"
+            ]
+          }
+        ]
+      },
+      {
+        "agentId": "mxc-test",
+        "path": "C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\sessions\\sessions.json",
+        "count": 5,
+        "recent": [
+          {
+            "agentId": "mxc-test",
+            "key": "agent:mxc-test:external-paths-final",
+            "kind": "direct",
+            "sessionId": "8c0a9753-e0dd-422e-9287-681e8faf85bc",
+            "updatedAt": 1784281705276,
+            "age": 23791215,
+            "thinkingLevel": "high",
+            "abortedLastRun": false,
+            "inputTokens": 8268,
+            "outputTokens": 412,
+            "cacheRead": 6656,
+            "cacheWrite": 0,
+            "totalTokens": 8074,
+            "totalTokensFresh": true,
+            "remainingTokens": 363926,
+            "percentUsed": 2,
+            "model": "gpt-5.6-sol",
+            "configuredModel": "openai/gpt-5.6-sol",
+            "selectedModel": "openai/gpt-5.6-sol",
+            "modelSelectionReason": null,
+            "runtime": "OpenClaw Default",
+            "contextTokens": 372000,
+            "flags": [
+              "think:high",
+              "id:8c0a9753-e0dd-422e-9287-681e8faf85bc"
+            ]
+          },
+          {
+            "agentId": "mxc-test",
+            "key": "agent:mxc-test:external-paths-20260717-retry2",
+            "kind": "direct",
+            "sessionId": "a582da70-aff2-4e39-9a5d-a2d6463239fc",
+            "updatedAt": 1784281565571,
+            "age": 23930920,
+            "abortedLastRun": false,
+            "inputTokens": 14922,
+            "outputTokens": 1198,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "totalTokens": 8063,
+            "totalTokensFresh": true,
+            "remainingTokens": 363937,
+            "percentUsed": 2,
+            "model": "gpt-5.6-sol",
+            "configuredModel": "openai/gpt-5.6-sol",
+            "selectedModel": "openai/gpt-5.6-sol",
+            "modelSelectionReason": null,
+            "runtime": "OpenClaw Default",
+            "contextTokens": 372000,
+            "flags": [
+              "id:a582da70-aff2-4e39-9a5d-a2d6463239fc"
+            ]
+          },
+          {
+            "agentId": "mxc-test",
+            "key": "agent:mxc-test:external-paths-20260717-retry1",
+            "kind": "direct",
+            "sessionId": "87fb4638-0a40-4ef2-a7c9-21c4dc460aa2",
+            "updatedAt": 1784281453918,
+            "age": 24042573,
+            "abortedLastRun": false,
+            "inputTokens": 6795,
+            "outputTokens": 106,
+            "cacheRead": 8192,
+            "cacheWrite": 0,
+            "totalTokens": 8101,
+            "totalTokensFresh": true,
+            "remainingTokens": 363899,
+            "percentUsed": 2,
+            "model": "gpt-5.6-sol",
+            "configuredModel": "openai/gpt-5.6-sol",
+            "selectedModel": "openai/gpt-5.6-sol",
+            "modelSelectionReason": null,
+            "runtime": "OpenClaw Default",
+            "contextTokens": 372000,
+            "flags": [
+              "id:87fb4638-0a40-4ef2-a7c9-21c4dc460aa2"
+            ]
+          },
+          {
+            "agentId": "mxc-test",
+            "key": "agent:mxc-test:external-paths-20260717",
+            "kind": "direct",
+            "sessionId": "1f254db6-2cc2-459f-a2d7-ae23e4775513",
+            "updatedAt": 1784281372327,
+            "age": 24124164,
+            "abortedLastRun": false,
+            "inputTokens": 8336,
+            "outputTokens": 163,
+            "cacheRead": 6656,
+            "cacheWrite": 0,
+            "totalTokens": 8108,
+            "totalTokensFresh": true,
+            "remainingTokens": 363892,
+            "percentUsed": 2,
+            "model": "gpt-5.6-sol",
+            "configuredModel": "openai/gpt-5.6-sol",
+            "selectedModel": "openai/gpt-5.6-sol",
+            "modelSelectionReason": null,
+            "runtime": "OpenClaw Default",
+            "contextTokens": 372000,
+            "flags": [
+              "id:1f254db6-2cc2-459f-a2d7-ae23e4775513"
+            ]
+          },
+          {
+            "agentId": "mxc-test",
+            "key": "agent:mxc-test:main",
+            "kind": "direct",
+            "sessionId": "d62f799c-9048-400e-98fb-2f71ddf539c5",
+            "updatedAt": 1784279153062,
+            "age": 26343429,
+            "abortedLastRun": false,
+            "inputTokens": 2595,
+            "outputTokens": 1311,
+            "cacheRead": 17408,
+            "cacheWrite": 0,
+            "totalTokens": 10602,
+            "totalTokensFresh": true,
+            "remainingTokens": 361398,
+            "percentUsed": 3,
+            "model": "gpt-5.6-sol",
+            "configuredModel": "openai/gpt-5.6-sol",
+            "selectedModel": "openai/gpt-5.6-sol",
+            "modelSelectionReason": null,
+            "runtime": "OpenClaw Default",
+            "contextTokens": 372000,
+            "flags": [
+              "id:d62f799c-9048-400e-98fb-2f71ddf539c5"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "os": {
+    "platform": "win32",
+    "arch": "x64",
+    "release": "10.0.26200",
+    "label": "windows 10.0.26200 (x64)"
+  },
+  "update": {
+    "root": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+    "installKind": "package",
+    "packageManager": "npm",
+    "deps": {
+      "manager": "npm",
+      "status": "ok",
+      "lockfilePath": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\npm-shrinkwrap.json",
+      "markerPath": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\node_modules"
+    }
+  },
+  "updateChannel": "beta",
+  "updateChannelSource": "installed-version",
+  "memory": null,
+  "memoryPlugin": {
+    "enabled": true,
+    "slot": "memory-core"
+  },
+  "gateway": {
+    "mode": "local",
+    "url": "ws://127.0.0.1:18789",
+    "urlSource": "local loopback",
+    "misconfigured": false,
+    "reachable": true,
+    "connectLatencyMs": 282,
+    "self": null,
+    "error": "missing scope: operator.read",
+    "authWarning": null
+  },
+  "gatewayService": {
+    "label": "Scheduled Task",
+    "installed": true,
+    "loaded": true,
+    "managedByOpenClaw": true,
+    "externallyManaged": false,
+    "loadedText": "registered",
+    "runtime": {
+      "status": "running",
+      "pid": 8604,
+      "detail": "Gateway process detected for gateway port 18789.",
+      "state": "Ready",
+      "lastRunTime": "7/18/2026 1:23:22 AM",
+      "lastRunResult": "0"
+    },
+    "runtimeShort": "running (pid 8604, state Ready, Gateway process detected for gateway port 18789.)",
+    "layout": {
+      "execStart": "'C:\\Program Files\\nodejs\\node.exe' 'C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\dist\\index.js' gateway --port 18789",
+      "sourcePath": "C:\\Users\\LocalAdmin\\.openclaw\\gateway.cmd",
+      "sourcePathReal": "C:\\Users\\LocalAdmin\\.openclaw\\gateway.cmd",
+      "entrypoint": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\dist\\index.js",
+      "entrypointReal": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw\\dist\\index.js",
+      "packageRoot": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+      "packageRootReal": "C:\\Users\\LocalAdmin\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+      "packageVersion": "2026.7.2-beta.1",
+      "entrypointSourceCheckout": false
+    }
+  },
+  "nodeService": {
+    "label": "Scheduled Task",
+    "installed": false,
+    "loaded": false,
+    "managedByOpenClaw": false,
+    "externallyManaged": false,
+    "loadedText": "missing",
+    "runtime": {
+      "status": "stopped",
+      "detail": "ERROR: The system cannot find the file specified.",
+      "missingUnit": true
+    },
+    "runtimeShort": "stopped (ERROR: The system cannot find the file specified.)"
+  },
+  "agents": {
+    "defaultId": "main",
+    "agents": [
+      {
+        "id": "main",
+        "workspaceDir": "C:\\Users\\LocalAdmin\\.openclaw\\workspace",
+        "bootstrapPending": true,
+        "sessionsPath": "C:\\Users\\LocalAdmin\\.openclaw\\agents\\main\\sessions\\sessions.json",
+        "sessionsCount": 1,
+        "lastUpdatedAt": 1784241264996,
+        "lastActiveAgeMs": 64230969
+      },
+      {
+        "id": "mxc-test",
+        "workspaceDir": "C:\\mxc-lab\\agent-home",
+        "bootstrapPending": true,
+        "sessionsPath": "C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\sessions\\sessions.json",
+        "sessionsCount": 5,
+        "lastUpdatedAt": 1784281705276,
+        "lastActiveAgeMs": 23790689
+      }
+    ],
+    "totalSessions": 6,
+    "bootstrapPendingCount": 2
+  },
+  "secretDiagnostics": []
+}
+

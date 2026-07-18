@@ -1,0 +1,5 @@
+﻿Command: openclaw config patch --file ... --replace-path agents.list
+ExitCode: 0
+
+Applied 1 config update(s). Change will apply without restarting the gateway.
+

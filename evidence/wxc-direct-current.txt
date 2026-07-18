@@ -1,0 +1,9 @@
+﻿wxc-exec.exe : Request error
+At line:2 char:170
++ ... -exec.exe'; & $w --debug --config C:\mxc-lab\config\wxc-direct-curren ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Request error:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Unknown top-level field(s) in config: container_id, dry_run, env, experimental_enabled, lxc_config, policy, schema_version, script_code, script_timeout, working_directory. Remove them or check for typos (field names are case-sensitive, e.g. 'filesystem' not 'fileSystem').
+

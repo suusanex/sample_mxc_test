@@ -1,0 +1,25 @@
+﻿Windows Container Executor
+
+Usage: wxc-exec.exe [OPTIONS] [CONFIG_PATH] [-- <COMMAND>...]
+
+Arguments:
+  [CONFIG_PATH]  Path to config JSON file (positional)
+  [COMMAND]...   Command to run inside the container, overriding `process.commandLine` from the policy. The command must follow a `--` separator so normal CLI flags remain usable after the config path. Examples: wxc-exec policy.json -- python --version When provided, `process.commandLine` in the policy file becomes optional and is overridden
+
+Options:
+      --config <CONFIG>                Path to config JSON file
+      --config-base64 <CONFIG_BASE64>  Base64-encoded JSON config
+      --debug                          Enable debug/console output
+      --delete                         Delete container profile mode
+      --containername <CONTAINERNAME>  Container name (required with --delete)
+      --experimental                   Enable experimental features
+      --dry-run                        Parse and validate config then exit without executing
+      --log-file <LOG_FILE>            Path to diagnostic log file (appends, creates if missing)
+      --setup-hyperlight               Install the warmed Hyperlight snapshot and exit. Pulls the published kernel + initrd from GHCR (via docker or podman), warms them up, and writes the snapshot into the default user data dir (~/.local/share/pyhl on Linux, %LOCALAPPDATA%\pyhl on Windows). $PYHL_HOME overrides the destination if set. Intended for tool install hooks so first-run has zero warmup cost
+      --force                          Rebuild the snapshot even if one already exists. Use after upgrading `kernel` or `initrd.cpio` so the warm state matches the new bits. Requires --setup-hyperlight
+      --setup-wslc                     Pre-pull a WSLC container image into the local image cache and exit. MXC is an execution layer and does not pull images at run time; this flag (or `scripts/setup-wslc.ps1`) is how operators populate the cache. Requires `--image` to specify which image to pull
+      --image <IMAGE>                  Image reference to pre-pull (e.g. `alpine:latest`, `ghcr.io/owner/image:tag`). Required with `--setup-wslc`
+      --storage-path <STORAGE_PATH>    Optional WSLC storage path. When omitted the runner default is used (`%TEMP%\mxc-wslc-sessions`). Pass the same value here that your runtime configs set in `experimental.wslc.storagePath`, otherwise the runner will not find the pulled image. Requires `--setup-wslc`
+      --probe                          Run the fallback detector and emit JSON, without spawning a sandbox
+  -h, --help                           Print help
+

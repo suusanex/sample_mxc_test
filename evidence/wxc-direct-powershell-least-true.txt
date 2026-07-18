@@ -1,0 +1,81 @@
+﻿SECTION: Request simplified
+Container ID: mxc-direct-powershell-least-true-20260718
+Script code length: 96
+Working directory: C:\mxc-lab\workspace
+Script timeout: 120000
+Container name: mxc-direct-powershell-least-true-20260718
+SECTION: Full `ExecutionRequest` configuration (redacted)
+{
+  "schema_version": "0.7.0-alpha",
+  "container_id": "mxc-direct-powershell-least-true-20260718",
+  "env": [],
+  "script_code": "C:\\Windows\\System32\\cmd.exe /d /s /c \"powershell.exe -NoProfile -Command Write-Output MXC_PS_OK\"",
+  "working_directory": "C:\\mxc-lab\\workspace",
+  "script_timeout": 120000,
+  "containment": "processcontainer",
+  "lifecycle": {
+    "destroy_on_exit": true,
+    "preserve_policy": false
+  },
+  "policy": {
+    "least_privilege_mode": true,
+    "capabilities": [],
+    "readwrite_paths": [
+      "C:\\mxc-lab\\workspace"
+    ],
+    "readonly_paths": [
+      "C:\\Windows\\System32"
+    ],
+    "denied_paths": [],
+    "fallback": {
+      "allow_dacl_mutation": true
+    },
+    "default_network_policy": "block",
+    "network_enforcement_mode": "capabilities",
+    "allow_local_network": false,
+    "allowed_hosts": [],
+    "blocked_hosts": [],
+    "ui": {
+      "disable": false,
+      "clipboard": "none",
+      "injection": false
+    },
+    "base_process_ui": {
+      "isolation": "container",
+      "desktopSystemControl": false,
+      "systemSettings": "none",
+      "ime": false
+    }
+  },
+  "lxc_config": {
+    "distribution": "",
+    "release": ""
+  },
+  "seatbelt": null,
+  "experimental_enabled": false,
+  "experimental": {
+    "test": null,
+    "windows_sandbox": null,
+    "wslc": null,
+    "isolation_session": null
+  },
+  "dry_run": false
+}
+[network_proxy: disabled]
+Using BaseContainer-fallback dispatcher (schema version 0.7.0-alpha)
+warning: BaseContainer API not present or not preferred, and AppContainer + BFS is not compiled into this binary; falling back to AppContainer + DACL
+selected isolation tier: appcontainer-dacl
+AppContainerSID: S-1-15-2-3195777305-2022387043-515995778-1441816062-182963572-2115816656-3698950797
+STDIO mode: passthrough (forwarding parent handles to child)
+Process created successfully (PID: 13712)
+UI Job Object assigned to child process
+wxc-exec.exe : Access is denied.
+At line:2 char:253
++ ... mmary.txt'; & $w --debug --config C:\mxc-lab\config\wxc-direct-powers ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Access is denied.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Runner completed in 144ms
+Exit code: 1 (0x00000001)
+

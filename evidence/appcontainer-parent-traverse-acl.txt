@@ -1,0 +1,49 @@
+﻿BEFORE
+C:\mxc-lab NT AUTHORITY\Authenticated Users:(I)(M)
+           NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+           NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+           BUILTIN\Administrators:(I)(OI)(CI)(F)
+           BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+C:\mxc-lab\sandboxes NT AUTHORITY\Authenticated Users:(I)(M)
+                     NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+                     NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                     BUILTIN\Administrators:(I)(OI)(CI)(F)
+                     BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+processed file: C:\mxc-lab
+Successfully processed 1 files; Failed processing 0 files
+processed file: C:\mxc-lab\sandboxes
+Successfully processed 1 files; Failed processing 0 files
+AFTER
+C:\mxc-lab APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+           NT AUTHORITY\Authenticated Users:(I)(M)
+           NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+           NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+           BUILTIN\Administrators:(I)(OI)(CI)(F)
+           BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+C:\mxc-lab\sandboxes APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                     NT AUTHORITY\Authenticated Users:(I)(M)
+                     NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+                     NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                     BUILTIN\Administrators:(I)(OI)(CI)(F)
+                     BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+C:\mxc-lab\protected NT AUTHORITY\Authenticated Users:(I)(M)
+                     NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+                     NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                     BUILTIN\Administrators:(I)(OI)(CI)(F)
+                     BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+C:\mxc-lab\protected\sentinel.txt NT AUTHORITY\Authenticated Users:(I)(M)
+                                  NT AUTHORITY\SYSTEM:(I)(F)
+                                  BUILTIN\Administrators:(I)(F)
+                                  BUILTIN\Users:(I)(RX)
+
+Successfully processed 1 files; Failed processing 0 files

@@ -1,0 +1,102 @@
+﻿===== C:\mxc-lab\input =====
+C:\mxc-lab\input NT AUTHORITY\Authenticated Users:(I)(M)
+                 NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+                 NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                 BUILTIN\Administrators:(I)(OI)(CI)(F)
+                 BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+
+
+FullName   : C:\mxc-lab\input
+Attributes : Directory
+Length     : 
+
+
+
+
+===== C:\mxc-lab\input\TASK.md =====
+C:\mxc-lab\input\TASK.md NT AUTHORITY\Authenticated Users:(I)(M)
+                         NT AUTHORITY\SYSTEM:(I)(F)
+                         BUILTIN\Administrators:(I)(F)
+                         BUILTIN\Users:(I)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+
+
+FullName   : C:\mxc-lab\input\TASK.md
+Attributes : Archive
+Length     : 492
+
+
+
+
+===== C:\mxc-lab\input\run-experiment.ps1 =====
+C:\mxc-lab\input\run-experiment.ps1 NT AUTHORITY\Authenticated Users:(I)(M)
+                                    NT AUTHORITY\SYSTEM:(I)(F)
+                                    BUILTIN\Administrators:(I)(F)
+                                    BUILTIN\Users:(I)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+
+
+FullName   : C:\mxc-lab\input\run-experiment.ps1
+Attributes : Archive
+Length     : 1769
+
+
+
+
+===== C:\mxc-lab\output =====
+C:\mxc-lab\output NT AUTHORITY\Authenticated Users:(I)(M)
+                  NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
+                  NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                  BUILTIN\Administrators:(I)(OI)(CI)(F)
+                  BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+
+
+FullName   : C:\mxc-lab\output
+Attributes : Directory
+Length     : 
+
+
+
+
+===== C:\Windows\System32\cmd.exe =====
+C:\Windows\System32\cmd.exe NT SERVICE\TrustedInstaller:(F)
+                            BUILTIN\Administrators:(RX)
+                            NT AUTHORITY\SYSTEM:(RX)
+                            BUILTIN\Users:(RX)
+                            APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                            APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+
+
+FullName   : C:\Windows\System32\cmd.exe
+Attributes : Archive
+Length     : 344064
+
+
+
+
+===== C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe =====
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe NT SERVICE\TrustedInstaller:(F)
+                                                          BUILTIN\Administrators:(RX)
+                                                          NT AUTHORITY\SYSTEM:(RX)
+                                                          BUILTIN\Users:(RX)
+                                                          APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                                                          APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+
+
+FullName   : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Attributes : Archive
+Length     : 454656
+
+
+
+

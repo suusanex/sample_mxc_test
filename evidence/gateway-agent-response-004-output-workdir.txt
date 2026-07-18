@@ -1,0 +1,208 @@
+﻿{
+  "runId": "3bf540af-363f-4b16-8dcf-09183f36b38b",
+  "status": "ok",
+  "summary": "completed",
+  "result": {
+    "payloads": [
+      {
+        "text": "Complete tool result:\n\n```text\nworkdir \"C:\\mxc-lab\\output\" is unavailable or not a directory: command was not executed. workdir is treated as a literal path; shell expansions such as \"~\" are not applied. Use an existing directory, omit an explicit workdir to use the default cwd, or update the configured default cwd.\n```",
+        "mediaUrl": null
+      }
+    ],
+    "meta": {
+      "durationMs": 8672,
+      "agentMeta": {
+        "sessionId": "5fdc9187-81d6-418f-97dd-b3aeceba8de2",
+        "sessionFile": "sqlite:mxc-test:5fdc9187-81d6-418f-97dd-b3aeceba8de2:C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\sessions\\sessions.json",
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "contextTokens": 372000,
+        "agentHarnessId": "openclaw",
+        "usage": {
+          "input": 6313,
+          "output": 129,
+          "cacheRead": 4608,
+          "reasoningTokens": 10,
+          "total": 5602
+        },
+        "lastCallUsage": {
+          "input": 916,
+          "output": 78,
+          "cacheRead": 4608,
+          "cacheWrite": 0,
+          "reasoningTokens": 0,
+          "total": 5602
+        },
+        "promptTokens": 5524,
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1784335081680,
+          "provider": "openai",
+          "model": "gpt-5.6-sol",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 6423,
+          "contextTokenBudget": 372000,
+          "promptBudgetBeforeReserve": 352000,
+          "reserveTokens": 20000,
+          "effectiveReserveTokens": 20000,
+          "remainingPromptBudgetTokens": 345577,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 0,
+          "unwindowedMessageCount": 0,
+          "sessionId": "5fdc9187-81d6-418f-97dd-b3aeceba8de2"
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1784335081629,
+        "sessionId": "5fdc9187-81d6-418f-97dd-b3aeceba8de2",
+        "sessionKey": "agent:mxc-test:gateway-exec-only-20260718-004",
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "workspaceDir": "C:\\Users\\LocalAdmin\\.openclaw\\sandboxes\\agent-mxc-test-7e56d6fb",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "all",
+          "sandboxed": true
+        },
+        "systemPrompt": {
+          "chars": 21051,
+          "hash": "d9ddfc6b19ce08ac324fcdf8a5045b4b79f0fa46e1db6c5667d4add28825fa9f",
+          "projectContextChars": 11887,
+          "nonProjectContextChars": 9164
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "C:\\mxc-lab\\agent-home\\AGENTS.md",
+            "missing": false,
+            "rawChars": 7195,
+            "injectedChars": 7195,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "C:\\mxc-lab\\agent-home\\SOUL.md",
+            "missing": false,
+            "rawChars": 1509,
+            "injectedChars": 1509,
+            "truncated": false
+          },
+          {
+            "name": "TOOLS.md",
+            "path": "C:\\mxc-lab\\agent-home\\TOOLS.md",
+            "missing": false,
+            "rawChars": 866,
+            "injectedChars": 866,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "C:\\mxc-lab\\agent-home\\IDENTITY.md",
+            "missing": false,
+            "rawChars": 1275,
+            "injectedChars": 1275,
+            "truncated": false
+          },
+          {
+            "name": "USER.md",
+            "path": "C:\\mxc-lab\\agent-home\\USER.md",
+            "missing": false,
+            "rawChars": 534,
+            "injectedChars": 534,
+            "truncated": false
+          },
+          {
+            "name": "HEARTBEAT.md",
+            "path": "C:\\mxc-lab\\agent-home\\HEARTBEAT.md",
+            "missing": false,
+            "rawChars": 243,
+            "injectedChars": 243,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "C:\\mxc-lab\\agent-home\\BOOTSTRAP.md",
+            "missing": false,
+            "rawChars": 1668,
+            "injectedChars": 0,
+            "truncated": true
+          }
+        ],
+        "skills": {
+          "promptChars": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entries": []
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 1391,
+          "entries": [
+            {
+              "name": "exec",
+              "summaryChars": 524,
+              "summaryHash": "4acdcfd1c1f1001c4f56dbdcf0ed661f133b252be5363a413a9e155c13cb4a16",
+              "schemaChars": 1391,
+              "schemaHash": "4b140690819f330301678218827f1f0745ba69a7bda83c8612986bf84eeeed24",
+              "propertiesCount": 12
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 230,
+          "runtimeContextChars": 0,
+          "modelOnlyPromptChars": 0
+        }
+      },
+      "finalPromptText": "Invoke the exec tool exactly once. Set command to exactly: cmd.exe /d /c echo MXC_CMD_OK. Set workdir to exactly: C:\\mxc-lab\\output. Do not use any fallback or elevated execution. Include the complete tool result in your response.",
+      "finalAssistantVisibleText": "Complete tool result:\n\n```text\nworkdir \"C:\\mxc-lab\\output\" is unavailable or not a directory: command was not executed. workdir is treated as a literal path; shell expansions such as \"~\" are not applied. Use an existing directory, omit an explicit workdir to use the default cwd, or update the configured default cwd.\n```",
+      "finalAssistantRawText": "Complete tool result:\n\n```text\nworkdir \"C:\\mxc-lab\\output\" is unavailable or not a directory: command was not executed. workdir is treated as a literal path; shell expansions such as \"~\" are not applied. Use an existing directory, omit an explicit workdir to use the default cwd, or update the configured default cwd.\n```",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "openai",
+        "winnerModel": "gpt-5.6-sol",
+        "attempts": [
+          {
+            "provider": "openai",
+            "model": "gpt-5.6-sol",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "low"
+      },
+      "toolSummary": {
+        "calls": 1,
+        "tools": [
+          "exec"
+        ],
+        "failures": 1
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}
+OPENCLAW_EXIT_CODE=0
+

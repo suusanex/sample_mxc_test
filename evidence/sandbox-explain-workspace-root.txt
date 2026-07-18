@@ -1,0 +1,59 @@
+﻿{
+  "docsUrl": "https://docs.openclaw.ai/sandbox",
+  "agentId": "mxc-test",
+  "sessionKey": "agent:mxc-test:main",
+  "mainSessionKey": "agent:mxc-test:main",
+  "sandbox": {
+    "mode": "all",
+    "scope": "agent",
+    "backend": "mxc",
+    "workspaceAccess": "none",
+    "workspaceRoot": "C:\\mxc-lab\\sandboxes",
+    "effectiveHostWorkspaceRoot": "C:\\mxc-lab\\sandboxes\\agent-mxc-test-7e56d6fb",
+    "workspaceMounts": [],
+    "workspaceSource": "sandbox",
+    "sessionIsSandboxed": true,
+    "tools": {
+      "allow": [
+        "exec"
+      ],
+      "deny": [
+        "image"
+      ],
+      "sources": {
+        "allow": {
+          "source": "agent",
+          "key": "agents.list[].tools.sandbox.tools.allow"
+        },
+        "deny": {
+          "source": "agent",
+          "key": "agents.list[].tools.sandbox.tools.deny"
+        }
+      }
+    }
+  },
+  "elevated": {
+    "enabled": false,
+    "allowedByConfig": false,
+    "alwaysAllowedByConfig": false,
+    "allowFrom": {},
+    "failures": [
+      {
+        "gate": "enabled",
+        "key": "agents.list[].tools.elevated.enabled"
+      }
+    ]
+  },
+  "fixIt": [
+    "agents.defaults.sandbox.mode=off",
+    "agents.list[].sandbox.mode=off",
+    "tools.sandbox.tools.allow",
+    "tools.sandbox.tools.alsoAllow",
+    "tools.sandbox.tools.deny",
+    "agents.list[].tools.sandbox.tools.allow",
+    "agents.list[].tools.sandbox.tools.alsoAllow",
+    "agents.list[].tools.sandbox.tools.deny",
+    "tools.elevated.enabled"
+  ]
+}
+

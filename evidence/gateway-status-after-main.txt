@@ -1,0 +1,25 @@
+﻿Service: Scheduled Task (registered)
+File logs: C:\Users\LOCALA~1\AppData\Local\Temp\openclaw\openclaw-2026-07-18.log
+Command: C:\Program Files\nodejs\node.exe C:\Users\LocalAdmin\AppData\Roaming\npm\node_modules\openclaw\dist\index.js gateway --port 18789
+Service file: ~\.openclaw\gateway.cmd
+Service env: OPENCLAW_GATEWAY_PORT=18789
+
+Config (cli): ~\.openclaw\openclaw.json
+Config (service): ~\.openclaw\openclaw.json
+
+Gateway: bind=loopback (127.0.0.1), port=18789 (service args)
+Probe target: ws://127.0.0.1:18789
+Dashboard: http://127.0.0.1:18789/
+Probe note: Loopback-only gateway; only local clients can connect.
+
+CLI version: 2026.7.2-beta.1 (~\AppData\Roaming\npm\node_modules\openclaw\openclaw.mjs)
+Gateway version: 2026.7.2-beta.1
+
+Runtime: running (pid 140, state Ready, last run 0, last run time 7/18/2026 9:41:34 AM, Gateway process detected for gateway port 18789.)
+Connectivity probe: ok
+Capability: connected-no-operator-scope
+
+Listening: 127.0.0.1:18789
+Troubles: run openclaw status
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+

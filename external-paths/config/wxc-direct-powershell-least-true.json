@@ -1,0 +1,24 @@
+{
+  "version": "0.7.0-alpha",
+  "containerId": "mxc-direct-powershell-least-true-20260718",
+  "containment": "process",
+  "lifecycle": { "destroyOnExit": true, "preservePolicy": false },
+  "process": {
+    "commandLine": "C:\\Windows\\System32\\cmd.exe /d /s /c \"powershell.exe -NoProfile -Command Write-Output MXC_PS_OK\"",
+    "cwd": "C:\\mxc-lab\\workspace",
+    "env": [],
+    "timeout": 120000
+  },
+  "filesystem": {
+    "readwritePaths": ["C:\\mxc-lab\\workspace"],
+    "readonlyPaths": ["C:\\Windows\\System32"],
+    "deniedPaths": []
+  },
+  "ui": { "disable": false, "clipboard": "none", "injection": false },
+  "network": { "defaultPolicy": "block", "enforcementMode": "capabilities" },
+  "processContainer": {
+    "name": "mxc-direct-powershell-least-true",
+    "leastPrivilege": true,
+    "capabilities": []
+  }
+}

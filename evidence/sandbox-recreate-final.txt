@@ -1,0 +1,5 @@
+﻿Command: openclaw sandbox recreate --agent mxc-test --force
+ExitCode: 0
+
+No sandbox runtimes found matching the criteria. Run openclaw sandbox list to inspect active runtimes.
+

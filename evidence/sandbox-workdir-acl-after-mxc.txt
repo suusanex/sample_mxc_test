@@ -1,0 +1,55 @@
+﻿Test-Path=True
+C:\Users\LocalAdmin\.openclaw\sandboxes\agent-mxc-test-7e56d6fb NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                                                                BUILTIN\Administrators:(I)(OI)(CI)(F)
+                                                                win11test\LocalAdmin:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+
+Name                          Mode   Attributes LinkType Target
+----                          ----   ---------- -------- ------
+skills                        d-----  Directory          {}    
+AGENTS.md                     -a----    Archive          {}    
+BOOTSTRAP.md                  -a----    Archive          {}    
+HEARTBEAT.md                  -a----    Archive          {}    
+IDENTITY.md                   -a----    Archive          {}    
+openclaw-workspace-state.json -a----    Archive          {}    
+SOUL.md                       -a----    Archive          {}    
+TOOLS.md                      -a----    Archive          {}    
+USER.md                       -a----    Archive          {}    
+
+
+
+
+
+PSPath                  : Microsoft.PowerShell.Core\FileSystem::C:\Users\LocalAdmin\.openclaw\sandboxes\agent-mxc-test-
+                          7e56d6fb
+PSParentPath            : Microsoft.PowerShell.Core\FileSystem::C:\Users\LocalAdmin\.openclaw\sandboxes
+PSChildName             : agent-mxc-test-7e56d6fb
+PSDrive                 : C
+PSProvider              : Microsoft.PowerShell.Core\FileSystem
+CentralAccessPolicyId   : 
+CentralAccessPolicyName : 
+Path                    : Microsoft.PowerShell.Core\FileSystem::C:\Users\LocalAdmin\.openclaw\sandboxes\agent-mxc-test-
+                          7e56d6fb
+Owner                   : BUILTIN\Administrators
+Group                   : win11test\None
+Access                  : {System.Security.AccessControl.FileSystemAccessRule, 
+                          System.Security.AccessControl.FileSystemAccessRule, 
+                          System.Security.AccessControl.FileSystemAccessRule}
+Sddl                    : O:BAG:S-1-5-21-2073693102-2537363482-3815314771-513D:AI(A;OICIID;FA;;;SY)(A;OICIID;FA;;;BA)(A
+                          ;OICIID;FA;;;LA)
+AccessToString          : NT AUTHORITY\SYSTEM Allow  FullControl
+                          BUILTIN\Administrators Allow  FullControl
+                          win11test\LocalAdmin Allow  FullControl
+AuditToString           : 
+AccessRightType         : System.Security.AccessControl.FileSystemRights
+AccessRuleType          : System.Security.AccessControl.FileSystemAccessRule
+AuditRuleType           : System.Security.AccessControl.FileSystemAuditRule
+AreAccessRulesProtected : False
+AreAuditRulesProtected  : False
+AreAccessRulesCanonical : True
+AreAuditRulesCanonical  : True
+
+
+
+

@@ -1,0 +1,114 @@
+﻿Command: openclaw models --agent mxc-test status --json
+ExitCode: 0
+
+{
+  "configPath": "C:\\Users\\LocalAdmin\\.openclaw\\openclaw.json",
+  "agentId": "mxc-test",
+  "agentDir": "C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\agent",
+  "defaultModel": "openai/gpt-5.6-sol",
+  "resolvedDefault": "openai/gpt-5.6-sol",
+  "fallbacks": [],
+  "imageModel": null,
+  "imageFallbacks": [],
+  "utilityModel": {
+    "ref": "openai/gpt-5.6-luna",
+    "source": "provider-default"
+  },
+  "modelConfig": {
+    "defaultSource": "defaults",
+    "fallbacksSource": "defaults"
+  },
+  "aliases": {},
+  "allowed": [],
+  "auth": {
+    "storePath": "C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\agent\\openclaw-agent.sqlite",
+    "shellEnvFallback": {
+      "enabled": false,
+      "appliedKeys": []
+    },
+    "providersWithOAuth": [
+      "openai (1)"
+    ],
+    "missingProvidersInUse": [],
+    "modelRouteIssues": [],
+    "runtimeAuthRoutes": [
+      {
+        "provider": "openai",
+        "runtime": "codex",
+        "authProvider": "openai",
+        "status": "usable",
+        "effective": {
+          "kind": "profiles",
+          "detail": "~\\.openclaw\\agents\\mxc-test\\agent\\openclaw-agent.sqlite"
+        }
+      }
+    ],
+    "providers": [
+      {
+        "provider": "openai",
+        "effective": {
+          "kind": "profiles",
+          "detail": "~\\.openclaw\\agents\\mxc-test\\agent\\openclaw-agent.sqlite"
+        },
+        "profiles": {
+          "count": 1,
+          "oauth": 1,
+          "token": 0,
+          "apiKey": 0,
+          "labels": [
+            "openai:default=OAuth"
+          ]
+        }
+      }
+    ],
+    "unusableProfiles": [],
+    "oauth": {
+      "warnAfterMs": 86400000,
+      "profiles": [
+        {
+          "profileId": "openai:default",
+          "provider": "openai",
+          "type": "oauth",
+          "status": "ok",
+          "expiresAt": 1785067533000,
+          "remainingMs": 762060629,
+          "source": "store",
+          "label": "openai:default"
+        }
+      ],
+      "providers": [
+        {
+          "provider": "openai",
+          "status": "ok",
+          "profiles": [
+            {
+              "profileId": "openai:default",
+              "provider": "openai",
+              "type": "oauth",
+              "status": "ok",
+              "expiresAt": 1785067533000,
+              "remainingMs": 762060629,
+              "source": "store",
+              "label": "openai:default"
+            }
+          ],
+          "effectiveProfiles": [
+            {
+              "profileId": "openai:default",
+              "provider": "openai",
+              "type": "oauth",
+              "status": "ok",
+              "expiresAt": 1785067533000,
+              "remainingMs": 762060629,
+              "source": "store",
+              "label": "openai:default"
+            }
+          ],
+          "expiresAt": 1785067533000,
+          "remainingMs": 762060629
+        }
+      ]
+    }
+  }
+}
+

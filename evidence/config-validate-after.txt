@@ -1,0 +1,5 @@
+﻿Command: openclaw config validate
+ExitCode: 0
+
+Config valid: ~\.openclaw\openclaw.json
+

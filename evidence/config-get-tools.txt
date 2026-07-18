@@ -1,0 +1,11 @@
+﻿Command: config-get-tools
+ExitCode: 1
+
+node.exe : Config path not found: tools. Run openclaw config validate to inspect config shape.
+At C:\Users\LocalAdmin\AppData\Roaming\npm\openclaw.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/openclaw/openclaw.mjs" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Config path not...t config shape.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

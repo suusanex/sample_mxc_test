@@ -1,0 +1,208 @@
+﻿{
+  "runId": "51ea3dbc-7e76-4a86-84f3-261658c8ffd7",
+  "status": "ok",
+  "summary": "completed",
+  "result": {
+    "payloads": [
+      {
+        "text": "```text\nWarning: background execution is disabled; running synchronously.\n\n\n\nSECTION: Request simplified\nContainer ID: openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\nScript code length: 713\nWorking directory: C:\\mxc-lab\\sandboxes\\agent-mxc-test-7e56d6fb\nScript timeout: 120000\nContainer name: openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\nSECTION: Full `ExecutionRequest` configuration (redacted)\n{\n  \"schema_version\": \"0.7.0-alpha\",\n  \"container_id\": \"openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\",\n  \"env\": [\n    \"ALLUSERSPROFILE=<redacted>\",\n    \"APPDATA=<redacted>\",\n    \"CommonProgramFiles=<redacted>\",\n    \"CommonProgramFiles(x86)=<redacted>\",\n    \"CommonProgramW6432=<redacted>\",\n    \"COMPUTERNAME=<redacted>\",\n    \"ComSpec=<redacted>\",\n    \"HOME=<redacted>\",\n    \"HOMEDRIVE=<redacted>\",\n    \"HOMEPATH=<redacted>\",\n    \"LANG=<redacted>\",\n    \"LOCALAPPDATA=<redacted>\",\n    \"NUMBER_OF_PROCESSORS=<redacted>\",\n    \"OPENCLAW_SHELL=<redacted>\",\n    \"OS=<redacted>\",\n    \"PATH=<redacted>\",\n    \"PATHEXT=<redacted>\",\n    \"PROCESSOR_ARCHITECTURE=<redacted>\",\n    \"PROCESSOR_IDENTIFIER=<redacted>\",\n    \"PROCESSOR_LEVEL=<redacted>\",\n    \"PROCESSOR_REVISION=<redacted>\",\n    \"ProgramData=<redacted>\",\n    \"ProgramFiles=<redacted>\",\n    \"ProgramFiles(x86)=<redacted>\",\n    \"ProgramW6432=<redacted>\",\n    \"PUBLIC=<redacted>\",\n    \"SystemDrive=<redacted>\",\n    \"SystemRoot=<redacted>\",\n    \"TEMP=<redacted>\",\n    \"TMP=<redacted>\",\n    \"USERDOMAIN=<redacted>\",\n    \"USERNAME=<redacted>\",\n    \"USERPROFILE=<redacted>\",\n    \"WINDIR=<redacted>\"\n  ],\n  \"script_code\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /d /s /c \\\"type C:\\\\mxc-lab\\\\input\\\\TASK.md >nul && (echo INPUT_READ=SUCCESS>C:\\\\mxc-lab\\\\output\\\\operation-results.txt) || (echo INPUT_READ=FAILURE>C:\\\\mxc-lab\\\\output\\\\operation-re... (713 chars total)\",\n  \"working_directory\": \"C:\\\\mxc-lab\\\\sandboxes\\\\agent-mxc-test-7e56d6fb\",\n  \"script_timeout\": 120000,\n  \"containment\": \"processcontainer\",\n  \"lifecycle\": {\n    \"destroy_on_exit\": true,\n    \"preserve_policy\": false\n  },\n  \"policy\": {\n    \"least_privilege_mode\": true,\n    \"capabilities\": [],\n    \"readwrite_paths\": [\n      \"C:\\\\Users\\\\LOCALA~1\\\\AppData\\\\Local\\\\Temp\\\\openclaw-mxc-sandbox-C7yges\",\n      \"C:\\\\mxc-lab\\\\output\"\n    ],\n    \"readonly_paths\": [\n      \"C:\\\\mxc-lab\\\\sandboxes\\\\agent-mxc-test-7e56d6fb\",\n      \"C:\\\\Program Files\",\n      \"C:\\\\Program Files (x86)\",\n      \"C:\\\\Windows\\\\System32\",\n      \"C:\\\\Windows\\\\SysWOW64\",\n      \"C:\\\\mxc-lab\\\\input\"\n    ],\n    \"denied_paths\": [],\n    \"fallback\": {\n      \"allow_dacl_mutation\": true\n    },\n    \"default_network_policy\": \"block\",\n    \"network_enforcement_mode\": \"capabilities\",\n    \"allow_local_network\": false,\n    \"allowed_hosts\": [],\n    \"blocked_hosts\": [],\n    \"ui\": {\n      \"disable\": true,\n      \"clipboard\": \"none\",\n      \"injection\": false\n    },\n    \"base_process_ui\": {\n      \"isolation\": \"container\",\n      \"desktopSystemControl\": false,\n      \"systemSettings\": \"none\",\n      \"ime\": false\n    }\n  },\n  \"lxc_config\": {\n    \"distribution\": \"\",\n    \"release\": \"\"\n  },\n  \"seatbelt\": null,\n  \"experimental_enabled\": false,\n  \"experimental\": {\n    \"test\": null,\n    \"windows_sandbox\": null,\n    \"wslc\": null,\n    \"isolation_session\": null\n  },\n  \"dry_run\": false\n}\n[network_proxy: disabled]\nUsing BaseContainer-fallback dispatcher (schema version 0.7.0-alpha)\nwarning: BaseContainer API not present or not preferred, and AppContainer + BFS is not compiled into this binary; falling back to AppContainer + DACL\nselected isolation tier: appcontainer-dacl\nAppContainerSID: S-1-15-2-2078728762-2351741152-2064887057-1398358570-2465772296-677627929-3645506085\nSTDIO mode: passthrough (forwarding parent handles to child)\nWin32k mitigation applied to child process\nProcess created successfully (PID: 3572)\nUI Job Object assigned to child process\nINPUT_READ=SUCCESS\nOUTPUT_WRITE=SUCCESS\nPROTECTED_DELETE=DENIED\nRunner completed in 90ms\nExit code: 0 (0x00000000)\n```",
+        "mediaUrl": null
+      }
+    ],
+    "meta": {
+      "durationMs": 31423,
+      "agentMeta": {
+        "sessionId": "9f8be316-45c4-4f27-88e5-b94b6b1596a0",
+        "sessionFile": "sqlite:mxc-test:9f8be316-45c4-4f27-88e5-b94b6b1596a0:C:\\Users\\LocalAdmin\\.openclaw\\agents\\mxc-test\\sessions\\sessions.json",
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "contextTokens": 372000,
+        "agentHarnessId": "openclaw",
+        "usage": {
+          "input": 7911,
+          "output": 1441,
+          "cacheRead": 4608,
+          "reasoningTokens": 29,
+          "total": 8156
+        },
+        "lastCallUsage": {
+          "input": 2373,
+          "output": 1175,
+          "cacheRead": 4608,
+          "cacheWrite": 0,
+          "reasoningTokens": 0,
+          "total": 8156
+        },
+        "promptTokens": 6981,
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1784335879854,
+          "provider": "openai",
+          "model": "gpt-5.6-sol",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 6542,
+          "contextTokenBudget": 372000,
+          "promptBudgetBeforeReserve": 352000,
+          "reserveTokens": 20000,
+          "effectiveReserveTokens": 20000,
+          "remainingPromptBudgetTokens": 345458,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 0,
+          "unwindowedMessageCount": 0,
+          "sessionId": "9f8be316-45c4-4f27-88e5-b94b6b1596a0"
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1784335879796,
+        "sessionId": "9f8be316-45c4-4f27-88e5-b94b6b1596a0",
+        "sessionKey": "agent:mxc-test:gateway-exec-only-20260718-008",
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "workspaceDir": "C:\\mxc-lab\\sandboxes\\agent-mxc-test-7e56d6fb",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "all",
+          "sandboxed": true
+        },
+        "systemPrompt": {
+          "chars": 20842,
+          "hash": "02fd612d556dc2c3635b4118dd550de47e912aabd1b39d9f617aa5a87d002f25",
+          "projectContextChars": 11792,
+          "nonProjectContextChars": 9050
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "C:\\mxc-lab\\agent-home\\AGENTS.md",
+            "missing": false,
+            "rawChars": 7195,
+            "injectedChars": 7195,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "C:\\mxc-lab\\agent-home\\SOUL.md",
+            "missing": false,
+            "rawChars": 1509,
+            "injectedChars": 1509,
+            "truncated": false
+          },
+          {
+            "name": "TOOLS.md",
+            "path": "C:\\mxc-lab\\agent-home\\TOOLS.md",
+            "missing": false,
+            "rawChars": 866,
+            "injectedChars": 866,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "C:\\mxc-lab\\agent-home\\IDENTITY.md",
+            "missing": false,
+            "rawChars": 1275,
+            "injectedChars": 1275,
+            "truncated": false
+          },
+          {
+            "name": "USER.md",
+            "path": "C:\\mxc-lab\\agent-home\\USER.md",
+            "missing": false,
+            "rawChars": 534,
+            "injectedChars": 534,
+            "truncated": false
+          },
+          {
+            "name": "HEARTBEAT.md",
+            "path": "C:\\mxc-lab\\agent-home\\HEARTBEAT.md",
+            "missing": false,
+            "rawChars": 243,
+            "injectedChars": 243,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "C:\\mxc-lab\\agent-home\\BOOTSTRAP.md",
+            "missing": false,
+            "rawChars": 1668,
+            "injectedChars": 0,
+            "truncated": true
+          }
+        ],
+        "skills": {
+          "promptChars": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entries": []
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 1391,
+          "entries": [
+            {
+              "name": "exec",
+              "summaryChars": 524,
+              "summaryHash": "4acdcfd1c1f1001c4f56dbdcf0ed661f133b252be5363a413a9e155c13cb4a16",
+              "schemaChars": 1391,
+              "schemaHash": "4b140690819f330301678218827f1f0745ba69a7bda83c8612986bf84eeeed24",
+              "propertiesCount": 12
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 832,
+          "runtimeContextChars": 0,
+          "modelOnlyPromptChars": 0
+        }
+      },
+      "finalPromptText": "Invoke the exec tool exactly once with this exact command: type C:\\mxc-lab\\input\\TASK.md >nul && (echo INPUT_READ=SUCCESS>C:\\mxc-lab\\output\\operation-results.txt) || (echo INPUT_READ=FAILURE>C:\\mxc-lab\\output\\operation-results.txt) & echo MXC_ALLOWED_OUTPUT>C:\\mxc-lab\\output\\allowed.txt && (echo OUTPUT_WRITE=SUCCESS>>C:\\mxc-lab\\output\\operation-results.txt) || (echo OUTPUT_WRITE=FAILURE>>C:\\mxc-lab\\output\\operation-results.txt) & del /f /q C:\\mxc-lab\\protected\\sentinel.txt 2>C:\\mxc-lab\\output\\protected-delete-error.txt && (echo PROTECTED_DELETE=UNEXPECTED_SUCCESS>>C:\\mxc-lab\\output\\operation-results.txt) || (echo PROTECTED_DELETE=DENIED>>C:\\mxc-lab\\output\\operation-results.txt) & type C:\\mxc-lab\\output\\operation-results.txt. Do not use any fallback or elevated execution. Include the complete tool result in your response.",
+      "finalAssistantVisibleText": "```text\nWarning: background execution is disabled; running synchronously.\n\n\n\nSECTION: Request simplified\nContainer ID: openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\nScript code length: 713\nWorking directory: C:\\mxc-lab\\sandboxes\\agent-mxc-test-7e56d6fb\nScript timeout: 120000\nContainer name: openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\nSECTION: Full `ExecutionRequest` configuration (redacted)\n{\n  \"schema_version\": \"0.7.0-alpha\",\n  \"container_id\": \"openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\",\n  \"env\": [\n    \"ALLUSERSPROFILE=<redacted>\",\n    \"APPDATA=<redacted>\",\n    \"CommonProgramFiles=<redacted>\",\n    \"CommonProgramFiles(x86)=<redacted>\",\n    \"CommonProgramW6432=<redacted>\",\n    \"COMPUTERNAME=<redacted>\",\n    \"ComSpec=<redacted>\",\n    \"HOME=<redacted>\",\n    \"HOMEDRIVE=<redacted>\",\n    \"HOMEPATH=<redacted>\",\n    \"LANG=<redacted>\",\n    \"LOCALAPPDATA=<redacted>\",\n    \"NUMBER_OF_PROCESSORS=<redacted>\",\n    \"OPENCLAW_SHELL=<redacted>\",\n    \"OS=<redacted>\",\n    \"PATH=<redacted>\",\n    \"PATHEXT=<redacted>\",\n    \"PROCESSOR_ARCHITECTURE=<redacted>\",\n    \"PROCESSOR_IDENTIFIER=<redacted>\",\n    \"PROCESSOR_LEVEL=<redacted>\",\n    \"PROCESSOR_REVISION=<redacted>\",\n    \"ProgramData=<redacted>\",\n    \"ProgramFiles=<redacted>\",\n    \"ProgramFiles(x86)=<redacted>\",\n    \"ProgramW6432=<redacted>\",\n    \"PUBLIC=<redacted>\",\n    \"SystemDrive=<redacted>\",\n    \"SystemRoot=<redacted>\",\n    \"TEMP=<redacted>\",\n    \"TMP=<redacted>\",\n    \"USERDOMAIN=<redacted>\",\n    \"USERNAME=<redacted>\",\n    \"USERPROFILE=<redacted>\",\n    \"WINDIR=<redacted>\"\n  ],\n  \"script_code\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /d /s /c \\\"type C:\\\\mxc-lab\\\\input\\\\TASK.md >nul && (echo INPUT_READ=SUCCESS>C:\\\\mxc-lab\\\\output\\\\operation-results.txt) || (echo INPUT_READ=FAILURE>C:\\\\mxc-lab\\\\output\\\\operation-re... (713 chars total)\",\n  \"working_directory\": \"C:\\\\mxc-lab\\\\sandboxes\\\\agent-mxc-test-7e56d6fb\",\n  \"script_timeout\": 120000,\n  \"containment\": \"processcontainer\",\n  \"lifecycle\": {\n    \"destroy_on_exit\": true,\n    \"preserve_policy\": false\n  },\n  \"policy\": {\n    \"least_privilege_mode\": true,\n    \"capabilities\": [],\n    \"readwrite_paths\": [\n      \"C:\\\\Users\\\\LOCALA~1\\\\AppData\\\\Local\\\\Temp\\\\openclaw-mxc-sandbox-C7yges\",\n      \"C:\\\\mxc-lab\\\\output\"\n    ],\n    \"readonly_paths\": [\n      \"C:\\\\mxc-lab\\\\sandboxes\\\\agent-mxc-test-7e56d6fb\",\n      \"C:\\\\Program Files\",\n      \"C:\\\\Program Files (x86)\",\n      \"C:\\\\Windows\\\\System32\",\n      \"C:\\\\Windows\\\\SysWOW64\",\n      \"C:\\\\mxc-lab\\\\input\"\n    ],\n    \"denied_paths\": [],\n    \"fallback\": {\n      \"allow_dacl_mutation\": true\n    },\n    \"default_network_policy\": \"block\",\n    \"network_enforcement_mode\": \"capabilities\",\n    \"allow_local_network\": false,\n    \"allowed_hosts\": [],\n    \"blocked_hosts\": [],\n    \"ui\": {\n      \"disable\": true,\n      \"clipboard\": \"none\",\n      \"injection\": false\n    },\n    \"base_process_ui\": {\n      \"isolation\": \"container\",\n      \"desktopSystemControl\": false,\n      \"systemSettings\": \"none\",\n      \"ime\": false\n    }\n  },\n  \"lxc_config\": {\n    \"distribution\": \"\",\n    \"release\": \"\"\n  },\n  \"seatbelt\": null,\n  \"experimental_enabled\": false,\n  \"experimental\": {\n    \"test\": null,\n    \"windows_sandbox\": null,\n    \"wslc\": null,\n    \"isolation_session\": null\n  },\n  \"dry_run\": false\n}\n[network_proxy: disabled]\nUsing BaseContainer-fallback dispatcher (schema version 0.7.0-alpha)\nwarning: BaseContainer API not present or not preferred, and AppContainer + BFS is not compiled into this binary; falling back to AppContainer + DACL\nselected isolation tier: appcontainer-dacl\nAppContainerSID: S-1-15-2-2078728762-2351741152-2064887057-1398358570-2465772296-677627929-3645506085\nSTDIO mode: passthrough (forwarding parent handles to child)\nWin32k mitigation applied to child process\nProcess created successfully (PID: 3572)\nUI Job Object assigned to child process\nINPUT_READ=SUCCESS\nOUTPUT_WRITE=SUCCESS\nPROTECTED_DELETE=DENIED\nRunner completed in 90ms\nExit code: 0 (0x00000000)\n```",
+      "finalAssistantRawText": "```text\nWarning: background execution is disabled; running synchronously.\n\n\n\nSECTION: Request simplified\nContainer ID: openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\nScript code length: 713\nWorking directory: C:\\mxc-lab\\sandboxes\\agent-mxc-test-7e56d6fb\nScript timeout: 120000\nContainer name: openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\nSECTION: Full `ExecutionRequest` configuration (redacted)\n{\n  \"schema_version\": \"0.7.0-alpha\",\n  \"container_id\": \"openclaw-mxc-agent-mxc-test-7e56d6fb-dbe34b39\",\n  \"env\": [\n    \"ALLUSERSPROFILE=<redacted>\",\n    \"APPDATA=<redacted>\",\n    \"CommonProgramFiles=<redacted>\",\n    \"CommonProgramFiles(x86)=<redacted>\",\n    \"CommonProgramW6432=<redacted>\",\n    \"COMPUTERNAME=<redacted>\",\n    \"ComSpec=<redacted>\",\n    \"HOME=<redacted>\",\n    \"HOMEDRIVE=<redacted>\",\n    \"HOMEPATH=<redacted>\",\n    \"LANG=<redacted>\",\n    \"LOCALAPPDATA=<redacted>\",\n    \"NUMBER_OF_PROCESSORS=<redacted>\",\n    \"OPENCLAW_SHELL=<redacted>\",\n    \"OS=<redacted>\",\n    \"PATH=<redacted>\",\n    \"PATHEXT=<redacted>\",\n    \"PROCESSOR_ARCHITECTURE=<redacted>\",\n    \"PROCESSOR_IDENTIFIER=<redacted>\",\n    \"PROCESSOR_LEVEL=<redacted>\",\n    \"PROCESSOR_REVISION=<redacted>\",\n    \"ProgramData=<redacted>\",\n    \"ProgramFiles=<redacted>\",\n    \"ProgramFiles(x86)=<redacted>\",\n    \"ProgramW6432=<redacted>\",\n    \"PUBLIC=<redacted>\",\n    \"SystemDrive=<redacted>\",\n    \"SystemRoot=<redacted>\",\n    \"TEMP=<redacted>\",\n    \"TMP=<redacted>\",\n    \"USERDOMAIN=<redacted>\",\n    \"USERNAME=<redacted>\",\n    \"USERPROFILE=<redacted>\",\n    \"WINDIR=<redacted>\"\n  ],\n  \"script_code\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /d /s /c \\\"type C:\\\\mxc-lab\\\\input\\\\TASK.md >nul && (echo INPUT_READ=SUCCESS>C:\\\\mxc-lab\\\\output\\\\operation-results.txt) || (echo INPUT_READ=FAILURE>C:\\\\mxc-lab\\\\output\\\\operation-re... (713 chars total)\",\n  \"working_directory\": \"C:\\\\mxc-lab\\\\sandboxes\\\\agent-mxc-test-7e56d6fb\",\n  \"script_timeout\": 120000,\n  \"containment\": \"processcontainer\",\n  \"lifecycle\": {\n    \"destroy_on_exit\": true,\n    \"preserve_policy\": false\n  },\n  \"policy\": {\n    \"least_privilege_mode\": true,\n    \"capabilities\": [],\n    \"readwrite_paths\": [\n      \"C:\\\\Users\\\\LOCALA~1\\\\AppData\\\\Local\\\\Temp\\\\openclaw-mxc-sandbox-C7yges\",\n      \"C:\\\\mxc-lab\\\\output\"\n    ],\n    \"readonly_paths\": [\n      \"C:\\\\mxc-lab\\\\sandboxes\\\\agent-mxc-test-7e56d6fb\",\n      \"C:\\\\Program Files\",\n      \"C:\\\\Program Files (x86)\",\n      \"C:\\\\Windows\\\\System32\",\n      \"C:\\\\Windows\\\\SysWOW64\",\n      \"C:\\\\mxc-lab\\\\input\"\n    ],\n    \"denied_paths\": [],\n    \"fallback\": {\n      \"allow_dacl_mutation\": true\n    },\n    \"default_network_policy\": \"block\",\n    \"network_enforcement_mode\": \"capabilities\",\n    \"allow_local_network\": false,\n    \"allowed_hosts\": [],\n    \"blocked_hosts\": [],\n    \"ui\": {\n      \"disable\": true,\n      \"clipboard\": \"none\",\n      \"injection\": false\n    },\n    \"base_process_ui\": {\n      \"isolation\": \"container\",\n      \"desktopSystemControl\": false,\n      \"systemSettings\": \"none\",\n      \"ime\": false\n    }\n  },\n  \"lxc_config\": {\n    \"distribution\": \"\",\n    \"release\": \"\"\n  },\n  \"seatbelt\": null,\n  \"experimental_enabled\": false,\n  \"experimental\": {\n    \"test\": null,\n    \"windows_sandbox\": null,\n    \"wslc\": null,\n    \"isolation_session\": null\n  },\n  \"dry_run\": false\n}\n[network_proxy: disabled]\nUsing BaseContainer-fallback dispatcher (schema version 0.7.0-alpha)\nwarning: BaseContainer API not present or not preferred, and AppContainer + BFS is not compiled into this binary; falling back to AppContainer + DACL\nselected isolation tier: appcontainer-dacl\nAppContainerSID: S-1-15-2-2078728762-2351741152-2064887057-1398358570-2465772296-677627929-3645506085\nSTDIO mode: passthrough (forwarding parent handles to child)\nWin32k mitigation applied to child process\nProcess created successfully (PID: 3572)\nUI Job Object assigned to child process\nINPUT_READ=SUCCESS\nOUTPUT_WRITE=SUCCESS\nPROTECTED_DELETE=DENIED\nRunner completed in 90ms\nExit code: 0 (0x00000000)\n```",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "openai",
+        "winnerModel": "gpt-5.6-sol",
+        "attempts": [
+          {
+            "provider": "openai",
+            "model": "gpt-5.6-sol",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "low"
+      },
+      "toolSummary": {
+        "calls": 1,
+        "tools": [
+          "exec"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}
+OPENCLAW_EXIT_CODE=0
+

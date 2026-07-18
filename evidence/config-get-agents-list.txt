@@ -1,0 +1,21 @@
+﻿Command: config-get-agents-list
+ExitCode: 0
+
+[
+  {
+    "id": "main",
+    "workspace": "C:\\Users\\LocalAdmin\\.openclaw\\workspace"
+  },
+  {
+    "id": "mxc-test",
+    "workspace": "C:\\mxc-lab\\agent-home",
+    "skills": [],
+    "sandbox": {
+      "mode": "all",
+      "backend": "mxc",
+      "workspaceAccess": "none",
+      "scope": "agent"
+    }
+  }
+]
+

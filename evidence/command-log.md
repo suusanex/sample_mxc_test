@@ -111,3 +111,13 @@ DISM.exe /Online /Cleanup-Image /ScanHealth
 Windows Update API (`Microsoft.Update.Session`) で未導入の更新を検索した。KB890830、AudioProcessingObject driver、KB5100998、KB5101650 (26200.8875) の4件を検出し、ダウンロード成功（ResultCode 2）後に install を開始した。KB5101650 と KB5100998 の install started event（WindowsUpdateClient event ID 43）を記録した。
 
 その後、`HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired` が存在することを確認した。再起動前に `C:\mxc-lab\resume-after-reboot.ps1` と `evidence\resume-instructions.md` を作成済みである。
+# 2026-07-18 exec transport再診断と主実験
+
+- effective agent/sandbox tool allowを `exec` のみに設定し、elevatedを無効化。
+- sandbox workspace rootを `C:\mxc-lab\sandboxes` へ設定。
+- `openclaw sandbox recreate --agent mxc-test --force` とGateway再起動を実施。
+- Gateway経由の新規sessionでstructured `exec` tool callを確認。
+- bare shell built-inの主実験でinput read、output write、protected delete拒否を確認。
+- sentinel SHA-256は前後一致。
+- PowerShell子プロセスはplugin固定の `leastPrivilege:true` で拒否。直接MXC比較では `leastPrivilege:false` で成功。
+- plugin source改変、clone、source build、sandbox外fallbackは未実施。

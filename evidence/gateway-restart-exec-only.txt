@@ -1,0 +1,5 @@
+﻿Command: openclaw gateway restart
+ExitCode: 0
+
+Restarted Scheduled Task: OpenClaw Gateway
+
