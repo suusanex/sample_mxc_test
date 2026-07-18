@@ -1,0 +1,13 @@
+runId=add49c88-f0b3-4d83-9952-dced2678a281
+status=ok
+response=Exit code: 0
+provider=github-copilot
+model=gpt-5.6-sol
+agentHarnessId=openclaw
+toolSummary.calls=1
+toolSummary.tools=exec
+toolSummary.failures=0
+fallbackUsed=false
+INPUT_READ=SUCCESS
+OUTPUT_WRITE=SUCCESS
+PROTECTED_DELETE=DENIED

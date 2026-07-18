@@ -1,0 +1,8 @@
+capturedAt=2026-07-18T22:51:00+09:00
+agentId=copilot-whole-gateway
+provider=github-copilot
+profileId=github-copilot:github
+type=token
+status=usable
+storage=experimental state dedicated agent SQLite
+secretValues=<not recorded>

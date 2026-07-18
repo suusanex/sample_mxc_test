@@ -1,0 +1,4 @@
+path=C:\mxc-lab\protected\sentinel.txt
+algorithm=SHA256
+hash=88FEBE606BF3C79FE5614973724776001C5FACC72A5A4E49DDCAB1BFAB2A436E
+exists=true

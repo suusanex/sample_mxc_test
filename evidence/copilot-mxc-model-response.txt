@@ -1,0 +1,9 @@
+runId=13cd5355-db69-451c-8222-a6c8abd6fe6c
+status=ok
+response=COPILOT_MXC_MODEL_OK
+provider=github-copilot
+model=gpt-5.6-sol
+agentHarnessId=openclaw
+effectiveContextTokens=128000
+fallbackUsed=false
+runner=embedded OpenClaw shared agent loop inside MXC Gateway

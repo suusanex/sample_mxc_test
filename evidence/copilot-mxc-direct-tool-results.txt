@@ -1,0 +1,11 @@
+toolName=direct_fs_probe
+source=plugin
+gatewayProcessPid=3564
+input_read.success=true
+input_read.value=WHOLE_GATEWAY_ALLOWED_INPUT
+output_write.success=true
+output_write.path=C:\mxc-lab\whole-gateway\output\direct-tool-allowed.txt
+protected_delete.success=false
+protected_delete.errorCode=EPERM
+protected_delete.errorMessage=EPERM: operation not permitted, unlink 'C:\mxc-lab\protected\sentinel.txt'
+sentinelHashUnchanged=true

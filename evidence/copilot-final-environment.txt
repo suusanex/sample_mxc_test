@@ -1,0 +1,11 @@
+Windows=Windows 10 Pro 25H2 build 26200.8875
+stableOpenClaw=2026.7.1-1
+MXC_SDK=0.7.0
+selectedIsolationTier=appcontainer-dacl
+selectedModel=github-copilot/gpt-5.6-sol
+sentinelSHA256=88FEBE606BF3C79FE5614973724776001C5FACC72A5A4E49DDCAB1BFAB2A436E
+port19789ListenerCount=0
+betaOpenClaw=2026.7.2-beta.1
+betaMxcPlugin=2026.7.2-beta.1 loaded
+betaGatewayHealth=ok
+betaEnvironmentChangedByExperiment=false

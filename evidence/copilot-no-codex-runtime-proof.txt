@@ -1,0 +1,17 @@
+experimentProvider=github-copilot
+experimentModel=gpt-5.6-sol
+modelEndpoint=https://api.individual.githubcopilot.com/responses
+agentHarnessId=openclaw
+configAgentRuntimeCopilot=false
+configCodexEnabled=false
+configOpenAIEnabled=false
+configCopilotProxyEnabled=false
+runnerCODEX_HOMEPresent=false
+experimentSubtreeCodexExeCount=0
+experimentSubtreeCopilotCliCount=0
+experimentSubtreeCopilotProxyCount=0
+officialMxcPluginUsed=false
+openClawBuiltinSandboxMode=off
+elevatedEnabled=false
+
+注記: stable配布物のagent harness探索時にstate内のdisabled Codex pluginモジュールを読み込んだログはあるが、Codex app-serverプロセス、Codex model route、Codex OAuth、Codex agent harnessは使用していない。

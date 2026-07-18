@@ -1,0 +1,10 @@
+capturedAt=2026-07-18T22:52:00+09:00
+experimentGatewayRunning=false
+mxcExecutorRunning=false
+bootstrapRunning=false
+wholeGatewayRunnerRunning=false
+experimentChildProcessesRunning=false
+port19789ListenerCount=0
+finalRunnerExitCode=0
+authProfileRetainedInExperimentalState=true
+authProfileCommittedToGit=false

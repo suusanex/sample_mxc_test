@@ -1,0 +1,5 @@
+INPUT_READ=SUCCESS
+OUTPUT_WRITE=SUCCESS
+PROTECTED_DELETE=DENIED
+deleteAttemptOutput=Could Not Find C:\mxc-lab\protected\sentinel.txt
+sentinelHostVerification=exists and SHA-256 unchanged

@@ -1,0 +1,18 @@
+Final successful run process tree:
+
+PID 13300 node.exe run-gateway-copilot.mjs
+  PID 12748 wxc-exec.exe --config-base64 <redacted> --debug --experimental
+    PID 7804 node.exe gateway-bootstrap-copilot.mjs
+      PID 3564 node.exe openclaw.mjs gateway run --port 19789 --bind loopback --verbose
+      PID 13968 node.exe openclaw.mjs gateway call tools.invoke (direct_fs_probe client)
+      PID 5968 node.exe openclaw.mjs agent (structured exec client)
+
+MXC log: selected isolation tier: appcontainer-dacl
+MXC log: Process created successfully (PID: 7804)
+Gateway log: GATEWAY_PID=3564
+Gateway log: embedded run tool start ... tool=exec
+Gateway log: embedded run tool end ... tool=exec
+
+Windows ProcessContainer containment is inherited by Gateway child processes. The exec command was created by Gateway while Gateway was below the MXC-created bootstrap. No sandbox-outside fallback path was implemented.
+experimentSubtreeCodexProcessCount=0
+experimentSubtreeCopilotCliOrProxyProcessCount=0

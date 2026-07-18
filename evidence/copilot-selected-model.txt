@@ -1,0 +1,7 @@
+providerModelId=github-copilot/gpt-5.6-sol
+catalogName=GPT-5.6 Sol
+catalogContextWindow=400000
+effectiveOpenClawContextWindow=128000
+toolSupport=verified by structured exec on host and in MXC
+entitlement=available in authenticated live catalog and successful live calls
+reason=gpt-5.5 refused the required negative deletion test before tool invocation; gpt-5.6-sol is the next GPT-5 family candidate and completed the structured tool call without fallback

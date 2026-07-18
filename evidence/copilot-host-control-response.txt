@@ -1,0 +1,7 @@
+status=ok
+response=COPILOT_HOST_CONTROL_OK
+provider=github-copilot
+model=gpt-5.6-sol
+agentHarnessId=openclaw
+fallbackUsed=false
+toolsCalled=0

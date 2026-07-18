@@ -1,0 +1,12 @@
+{
+  "agentId": "copilot-whole-gateway",
+  "defaultModel": "github-copilot/gpt-5.6-sol",
+  "resolvedDefault": "github-copilot/gpt-5.6-sol",
+  "fallbacks": [],
+  "authProvider": "github-copilot",
+  "profileId": "github-copilot:github",
+  "probeStatus": "ok",
+  "probeLatencyMs": 5201,
+  "effectiveContextTokens": 128000,
+  "secret": "<redacted>"
+}
