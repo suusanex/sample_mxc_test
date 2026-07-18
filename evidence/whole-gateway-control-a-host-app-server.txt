@@ -1,0 +1,37 @@
+対照A: ホスト上のCodex app-server単体試験
+実施日: 2026-07-18 JST
+
+MXC使用: false
+Codex version: codex-cli 0.144.3
+Codex binary:
+C:\mxc-lab\whole-gateway\state\npm\projects\openclaw-codex-8902d781d4__openclaw-generation__g-49fd4dbfde2c5057\node_modules\@openclaw\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex.exe
+
+主要環境変数:
+CODEX_HOME=C:\mxc-lab\whole-gateway\state\.codex
+HOME=C:\mxc-lab\whole-gateway\state
+USERPROFILE=C:\mxc-lab\whole-gateway\state
+APPDATA=C:\mxc-lab\whole-gateway\state\AppData\Roaming
+LOCALAPPDATA=C:\mxc-lab\whole-gateway\state\AppData\Local
+TEMP=C:\mxc-lab\whole-gateway\temp
+TMP=C:\mxc-lab\whole-gateway\temp
+OPENCLAW_STATE_DIR=C:\mxc-lab\whole-gateway\state
+OPENCLAW_CONFIG_PATH=C:\mxc-lab\whole-gateway\config\openclaw.json
+OPENCLAW_GATEWAY_PORT=19789
+
+試験1:
+command=codex.exe app-server --help
+exitCode=0
+result=app-server help表示成功
+usage=codex app-server [OPTIONS] [COMMAND]
+defaultTransport=stdio://
+
+試験2（OpenClaw実装と同じinitialize payload）:
+command=codex.exe app-server
+request={"id":1,"method":"initialize","params":{"clientInfo":{"name":"openclaw","title":"OpenClaw","version":"2026.7.1-1"},"capabilities":{"experimentalApi":true}}}
+response={"id":1,"result":{"userAgent":"Codex Desktop/0.144.3 (Windows 10.0.26200; x86_64) unknown (openclaw; 2026.7.1-1)","codexHome":"C:\\mxc-lab\\whole-gateway\\state\\.codex","platformFamily":"windows","platformOs":"windows"}}
+initializeResponseReceived=true
+aliveAfterInitialize=true
+canonicalizeError=false
+testProcessStopped=true
+
+判定: 同一バイナリ・同一CODEX_HOMEはホスト上で正常にcanonicalizeおよびinitializeできる。

@@ -1,0 +1,37 @@
+{
+  "controlA": {
+    "sessionId": "whole-gateway-host-control-1784368209896",
+    "runId": "4051586f-8a6f-4ab0-a427-51a7b707a495",
+    "provider": "openai",
+    "model": "gpt-5.6-sol",
+    "response": "HOST_CONTROL_OK",
+    "aborted": false,
+    "status": "completed"
+  },
+  "structuredExecControl": {
+    "runId": "991af344-1b5b-4a9f-bca8-687ead062c20",
+    "status": "ok",
+    "summary": "completed",
+    "sessionId": "whole-gateway-host-exec-control-1784368294164",
+    "provider": "openai",
+    "model": "gpt-5.6-sol",
+    "agentHarnessId": "codex",
+    "finalAssistantVisibleText": "Exit code: `0`  \nstdout: `HOST_EXEC_OK`",
+    "toolSummary": {
+      "calls": 1,
+      "tools": [
+        "bash"
+      ],
+      "failures": 0
+    },
+    "executionTrace": {
+      "winnerProvider": "openai",
+      "winnerModel": "gpt-5.6-sol",
+      "result": "success",
+      "fallbackUsed": false,
+      "runner": "embedded"
+    },
+    "aborted": false,
+    "stopReason": "stop"
+  }
+}

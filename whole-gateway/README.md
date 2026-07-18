@@ -12,9 +12,9 @@
 
 ## 実験結果
 
-`stable OpenClaw whole-Gateway in MXC: failure / inconclusive (agent/model layer)`
+`stable OpenClaw whole-Gateway in MXC: failure (Codex app-server / MXC appcontainer-dacl compatibility)`
 
-Gateway起動、MXC内部health/RPC、Gateway内直接toolによるinput読取・output書込・protected削除拒否は成功しました。agent実行はCodex app-serverがMXC内で`CODEX_HOME`をcanonicalizeできず、モデル接続およびstructured `exec`開始前に失敗しました。詳細は[evidence/whole-gateway-experiment.md](../evidence/whole-gateway-experiment.md)を参照してください。
+Gateway起動、MXC内部health/RPC、Gateway内直接toolによるinput読取・output書込・protected削除拒否は成功しました。agent実行はCodex app-serverがMXC内で`CODEX_HOME`をcanonicalizeできず、モデル接続およびstructured `exec`開始前に失敗しました。同一構成をMXC外で実行した対照試験ではapp-server initialize、モデル接続、agent session、structured execがすべて成功したため、一般的なセットアップ不良ではなくMXC AppContainer-DACLとの互換性問題です。詳細は[evidence/whole-gateway-root-cause.md](../evidence/whole-gateway-root-cause.md)を参照してください。
 
 ## 注意
 

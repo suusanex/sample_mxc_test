@@ -1,0 +1,64 @@
+対照B: 安定版Gateway全体のMXC外起動
+実施日: 2026-07-18 JST
+
+MXC使用: false
+OpenClaw=2026.7.1-1 (81ac4f3)
+Codex companion=2026.7.1-1
+Codex app-server=0.144.3
+state=C:\mxc-lab\whole-gateway\state
+config=C:\mxc-lab\whole-gateway\config\openclaw.json
+workspace=C:\mxc-lab\whole-gateway\workspace
+port=19789
+bind=loopback
+CODEX_HOME=C:\mxc-lab\whole-gateway\state\.codex
+
+Gateway startup:
+httpServerListening=true
+ready=true
+pluginsLoaded=codex,direct-fs-probe,memory-core,openai
+runtimeVersion=2026.7.1-1
+
+Gateway health:
+exitCode=0
+ok=true
+pluginErrors=0
+
+Gateway WebSocket/RPC probe:
+exitCode=0
+ok=true
+target=ws://127.0.0.1:19789
+connect.ok=true
+connect.rpcOk=true
+
+Agent control session:
+sessionId=whole-gateway-host-control-1784368209896
+runId=4051586f-8a6f-4ab0-a427-51a7b707a495
+provider=openai
+model=gpt-5.6-sol
+response=HOST_CONTROL_OK
+aborted=false
+runCompleted=true
+codexCanonicalizeError=false
+
+Structured exec control:
+sessionId=whole-gateway-host-exec-control-1784368294164
+runId=991af344-1b5b-4a9f-bca8-687ead062c20
+provider=openai
+model=gpt-5.6-sol
+toolCalls=1
+command=cmd.exe /d /s /c "echo HOST_EXEC_OK"
+exitCode=0
+stdout=HOST_EXEC_OK
+fallbackUsed=false
+runStatus=ok
+
+補足警告:
+agent実行後のauth-profile success bookkeepingで、agent database schema 8を安定版が1として扱う警告が出た。ただしagent responseとstructured execは正常完了しており、今回の起動・接続・tool callingを阻害していない。
+
+Cleanup:
+hostGatewayPid=5464
+hostGatewayStopped=true
+port19789ListeningAfterCleanup=false
+sentinelUnchanged=true
+
+判定: 同一安定版Gateway構成はMXC外でモデル接続、agent session、structured execまで成立する。

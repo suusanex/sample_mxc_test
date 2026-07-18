@@ -1,0 +1,5 @@
+Call the structured exec tool exactly once with this exact command:
+
+cmd.exe /d /s /c "echo HOST_EXEC_OK"
+
+Then report the exit code and stdout. Do not call direct_fs_probe or any other tool.
